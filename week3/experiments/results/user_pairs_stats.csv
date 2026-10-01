@@ -1,0 +1,11 @@
+metric,value
+user_pairs,444153
+pairs_common_eq_1,37739
+pairs_common_eq_1_and_sim_eq_1,37739
+share_of_all_pairs_common1_sim1,0.08496846807293883
+share_of_common1_pairs_with_sim1,1.0
+top20_neighbours_common_lt5_mean_A,18.955461293743372
+top20_neighbours_common_lt5_median_A,20.0
+users_with_any_top20_common_lt5_A,0.9978791092258749
+top20_neighbours_common_lt5_mean_C50,0.0
+top20_neighbours_common_lt5_median_C50,0.0

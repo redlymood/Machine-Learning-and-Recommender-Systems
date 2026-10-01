@@ -1,0 +1,15 @@
+config,user,top5 (train ratings)
+UB-A,60,"Star Kid (1997) (3) | Schindler's List (1993) (239) | Pather Panchali (1955) (7) | Fargo (1996) (410) | Godfather, The (1972) (331)"
+UB-C50,60,"Star Kid (1997) (3) | Boys, Les (1997) (3) | Schindler's List (1993) (239) | Wallace & Gromit: The Best of Aardman Animation (1996) (54) | Pather Panchali (1955) (7)"
+IB-A,60,"Entertaining Angels: The Dorothy Day Story (1996) (1) | Gold Diggers: The Secret of Bear Mountain (1995) (9) | Wyatt Earp (1994) (42) | Jackal, The (1997) (61) | Crossing Guard, The (1995) (24)"
+IB-C50,60,"Entertaining Angels: The Dorothy Day Story (1996) (1) | Aparajito (1956) (6) | World of Apu, The (Apur Sansar) (1959) (5) | Bhaji on the Beach (1993) (6) | Dingo (1992) (4)"
+UB-A pop>=20,60,"Schindler's List (1993) (239) | Fargo (1996) (410) | Godfather, The (1972) (331) | Shall We Dance? (1996) (38) | Close Shave, A (1995) (77)"
+UB-C50 pop>=20,60,"Schindler's List (1993) (239) | Wallace & Gromit: The Best of Aardman Animation (1996) (54) | Princess Bride, The (1987) (258) | Wrong Trousers, The (1993) (92) | Fargo (1996) (410)"
+IB-A pop>=20,60,"Wyatt Earp (1994) (42) | Jackal, The (1997) (61) | Crossing Guard, The (1995) (24) | Monty Python's Life of Brian (1979) (141) | Hudsucker Proxy, The (1994) (89)"
+IB-C50 pop>=20,60,Amadeus (1984) (211) | Raising Arizona (1987) (215) | Once Upon a Time... When We Were Colored (1995) (26) | Stand by Me (1986) (175) | Blade Runner (1982) (223)
+UB-A pop>=50,60,"Schindler's List (1993) (239) | Fargo (1996) (410) | Godfather, The (1972) (331) | Close Shave, A (1995) (77) | Wrong Trousers, The (1993) (92)"
+UB-C50 pop>=50,60,"Schindler's List (1993) (239) | Wallace & Gromit: The Best of Aardman Animation (1996) (54) | Princess Bride, The (1987) (258) | Wrong Trousers, The (1993) (92) | Fargo (1996) (410)"
+IB-A pop>=50,60,"Jackal, The (1997) (61) | Monty Python's Life of Brian (1979) (141) | Hudsucker Proxy, The (1994) (89) | Close Shave, A (1995) (77) | Aliens (1986) (220)"
+IB-C50 pop>=50,60,Amadeus (1984) (211) | Raising Arizona (1987) (215) | Stand by Me (1986) (175) | Blade Runner (1982) (223) | Groundhog Day (1993) (227)
+MF (reference),60,"Wrong Trousers, The (1993) (92) | Close Shave, A (1995) (77) | Wallace & Gromit: The Best of Aardman Animation (1996) (54) | Godfather, The (1972) (331) | Pather Panchali (1955) (7)"
+Most popular (ref.),60,Fargo (1996) (410) | Contact (1997) (405) | Liar Liar (1997) (392) | Scream (1996) (387) | Toy Story (1995) (357)

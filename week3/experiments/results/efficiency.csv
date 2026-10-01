@@ -1,0 +1,10 @@
+metric,users,items
+entities,943,1682
+ordered_pairs (n^2),889249,2829124
+unordered_pairs n(n-1)/2,444153,1413721
+mean_train_ratings_per_entity,84.83563096500531,47.56242568370987
+median_train_ratings_per_entity,52.0,21.0
+mean_common_over_all_pairs,12.062343381672532,4.5439121297625205
+mean_common_over_pairs_with_common>=1,12.874954340094204,7.518327009370077
+share_pairs_with_common=0,0.06311563807967074,0.39562190842464673
+full_corated_matrix_seconds (best of 3),0.027530457999091595,0.054641915994579904

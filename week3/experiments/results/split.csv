@@ -1,0 +1,8 @@
+metric,value
+seed,42
+train_ratings,80000
+test_ratings,20000
+users_in_train,943
+test_pairs_with_new_item,36
+distinct_new_items_in_test,32
+items_with_zero_train_ratings,32
