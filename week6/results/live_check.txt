@@ -1,0 +1,9 @@
+live https://redlymood.github.io/Machine-Learning-and-Recommender-Systems/week6/ | Chrome/155.0.8059.85 | backend webgl | implemented graph.js True | flow 28.7 s
+self-checks: pass 12, fail 0, pending 0
+validation sweep: [(0.5, 0.114483), (0.7, 0.104797), (0.85, 0.090021), (0.95, 0.07375)]; selected alpha 0.5
+method | live Recall@10 | local Recall@10 | identical | cohort | excluded_unseen | excluded_no_eligible
+popularity | 0.07602291343770759 | 0.07602291343770759 | True | 861 | 13 | 82
+pagerank | 0.07969324149418144 | 0.07969324149418144 | True | 861 | 13 | 82
+ppr | 0.11218853219486066 | 0.11218853219486066 | True | 861 | 13 | 82
+mf | 0.021137488852036153 | 0.021137488852036153 | True | 861 | 13 | 82
+selected alpha equals local (0.50): True; all test rows identical: True

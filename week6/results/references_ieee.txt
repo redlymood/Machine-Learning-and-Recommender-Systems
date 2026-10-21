@@ -1,0 +1,10 @@
+IEEE entries built from the registry data in results/references_raw.json (no course-readme text).
+[2] replaces the Stanford PageRank technical report: its server (ilpubs.stanford.edu) returned only an error page on 2026-10-21.
+[1] F. M. Harper and J. A. Konstan, "The MovieLens Datasets: History and Context," ACM Transactions on Interactive Intelligent Systems, vol. 5, no. 4, pp. 1–19, 2015, doi: 10.1145/2827872.
+[2] S. Brin and L. Page, "The anatomy of a large-scale hypertextual Web search engine," Computer Networks and ISDN Systems, vol. 30, no. 1–7, pp. 107–117, Apr. 1998, doi: 10.1016/S0169-7552(98)00110-X.
+[3] T. H. Haveliwala, "Topic-sensitive PageRank," in Proceedings of the 11th International Conference on World Wide Web, Honolulu, HI, USA, May 2002, pp. 517–526, doi: 10.1145/511446.511513.
+[4] G. Jeh and J. Widom, "Scaling personalized web search," in Proceedings of the Twelfth International Conference on World Wide Web (WWW '03), Budapest, Hungary, 2003, p. 271, doi: 10.1145/775152.775191.
+[5] F. Fouss, A. Pirotte, J.-M. Renders, and M. Saerens, "Random-Walk Computation of Similarities between Nodes of a Graph with Application to Collaborative Recommendation," IEEE Transactions on Knowledge and Data Engineering, vol. 19, no. 3, pp. 355–369, Mar. 2007, doi: 10.1109/TKDE.2007.46.
+[6] Y. Koren, R. Bell, and C. Volinsky, "Matrix Factorization Techniques for Recommender Systems," Computer, vol. 42, no. 8, pp. 30–37, Aug. 2009, doi: 10.1109/MC.2009.263.
+[7] D. Smilkov et al., "TensorFlow.js: Machine Learning for the Web and Beyond," in Proceedings of Machine Learning and Systems, vol. 1, 2019, pp. 309–321. [Online]. Available: https://proceedings.mlsys.org/paper_files/paper/2019/hash/acd593d2db87a799a8d3da5a860c028e-Abstract.html (also arXiv:1901.05350, doi: 10.48550/arXiv.1901.05350).
+[8] TensorFlow.js, "API reference, version 4.22.0." [Online]. Available: https://js.tensorflow.org/api/4.22.0/ [Accessed: 2026-10-21].
