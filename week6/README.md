@@ -33,6 +33,8 @@ in this order:
 6. **Recommend Top-10** for a method and a target user
 7. the three **Export** buttons
 
+Press Build graph before Run tests (otherwise check #11 stays pending). The results appear in the status line at the top and in the Self-checks panel at the bottom of the page.
+
 ## Versions used
 
 From [`results/versions.txt`](results/versions.txt):
