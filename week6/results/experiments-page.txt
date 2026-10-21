@@ -1,0 +1,134 @@
+backend webgl (tfjs 4.22.0); wall 36.0 s; numTensors before 0, after 10
+B1 self-checks: pass 12, fail 0, pending 0
+B2 alpha sweep (validation, 7.1 s): selected alpha 0.5
+  alpha 0.50 | val Recall@10 0.11448315913208877 | cohort 846 | PPR columns not converged 0 | error None
+  alpha 0.70 | val Recall@10 0.1047969507641043 | cohort 846 | PPR columns not converged 0 | error None
+  alpha 0.85 | val Recall@10 0.09002077155336492 | cohort 846 | PPR columns not converged 0 | error None
+  alpha 0.95 | val Recall@10 0.07375030387909676 | cohort 846 | PPR columns not converged 40 | error None
+  slider after sweep 0.85; set to 0.5
+B3 four-method TEST comparison (19.4 s, slider 0.5):
+  method | alpha | Recall@10 | cohort | excluded_unseen | excluded_no_eligible | mean pop | iterations | residual | converged | error
+  popularity | None | 0.07602291343770759 | 861 | 13 | 82 | 271.99686411149816 | None | None | None | None
+  pagerank | 0.5 | 0.07969324149418144 | 861 | 13 | 82 | 257.820325203252 | 19 | 5.466572474688292e-07 | True | None
+  ppr | 0.5 | 0.11218853219486066 | 861 | 13 | 82 | 244.20673635307733 | 21 | 9.786920145415934e-07 | True | None
+  mf | None | 0.021137488852036153 | 861 | 13 | 82 | 96.76085946573689 | None | None | None | None
+  convergence records: {'pagerank': {'alpha': 0.5, 'userId': None, 'iterations': 19, 'residual': 5.466572474688292e-07, 'converged': True, 'source': 'graph.js', 'at': '2026-10-20T17:47:42.022Z'}, 'ppr': {'alpha': 0.5, 'userId': 2, 'iterations': 21, 'residual': 9.786920145415934e-07, 'converged': True, 'source': 'graph.js', 'at': '2026-10-20T17:47:42.022Z'}}
+  MF: checkpoint 1, val RMSE 1.1829944264078285
+  results.csv test alpha column: {('popularity', 'test'): '', ('pagerank', 'test'): '0.50', ('ppr', 'test'): '0.50', ('mf', 'test'): ''}; pagerank/ppr == selected: True
+B4 test Top-10 (Top-10 panel):
+  user 1 | popularity | alpha 0.50 | 10 rows (DOM 10) | hits 2/19 | mean pop 246.8 | panel == recommendTopK True | info {'method': 'popularity', 'split': 'test', 'alpha': None, 'eligible': 1367, 'fewerThanK': False, 'zeroScoreIncluded': False}
+      1 |  100 | Fargo (1996) | Crime;Drama;Thriller | 377 | pop 377 | hit True
+      2 |  258 | Contact (1997) | Drama;Sci-Fi | 307 | pop 307 | hit True
+      3 |  286 | English Patient, The (1996) | Drama;Romance;War | 279 | pop 279 | hit False
+      4 |  300 | Air Force One (1997) | Action;Thriller | 235 | pop 235 | hit False
+      5 |  288 | Scream (1996) | Horror;Thriller | 226 | pop 226 | hit False
+      6 |  318 | Schindler's List (1993) | Drama;War | 224 | pop 224 | hit False
+      7 |  313 | Titanic (1997) | Action;Drama;Romance | 219 | pop 219 | hit False
+      8 |  302 | L.A. Confidential (1997) | Crime;Film-Noir;Mystery;Thriller | 202 | pop 202 | hit False
+      9 |  357 | One Flew Over the Cuckoo's Nest (1975) | Drama | 202 | pop 202 | hit False
+     10 |  483 | Casablanca (1942) | Drama;Romance;War | 197 | pop 197 | hit False
+  user 1 | pagerank | alpha 0.50 | 10 rows (DOM 10) | hits 3/19 | mean pop 239.4 | panel == recommendTopK True | info {'method': 'pagerank', 'split': 'test', 'alpha': 0.5, 'eligible': 1367, 'fewerThanK': False, 'zeroScoreIncluded': False}
+      1 |  258 | Contact (1997) | Drama;Sci-Fi | 0.00237519 | pop 307 | hit True
+      2 |  286 | English Patient, The (1996) | Drama;Romance;War | 0.00229125 | pop 279 | hit False
+      3 |  100 | Fargo (1996) | Crime;Drama;Thriller | 0.0022717 | pop 377 | hit True
+      4 |  313 | Titanic (1997) | Action;Drama;Romance | 0.00206343 | pop 219 | hit False
+      5 |  300 | Air Force One (1997) | Action;Thriller | 0.00200342 | pop 235 | hit False
+      6 |  288 | Scream (1996) | Horror;Thriller | 0.00186837 | pop 226 | hit False
+      7 |  302 | L.A. Confidential (1997) | Crime;Film-Noir;Mystery;Thriller | 0.00179813 | pop 202 | hit False
+      8 |  294 | Liar Liar (1997) | Comedy | 0.00148835 | pop 182 | hit False
+      9 |  275 | Sense and Sensibility (1995) | Drama;Romance | 0.00121587 | pop 178 | hit False
+     10 |  222 | Star Trek: First Contact (1996) | Action;Adventure;Sci-Fi | 0.00119282 | pop 189 | hit True
+  user 1 | ppr | alpha 0.50 | 10 rows (DOM 10) | hits 3/19 | mean pop 228.4 | panel == recommendTopK True | info {'method': 'ppr', 'split': 'test', 'alpha': 0.5, 'eligible': 1367, 'fewerThanK': False, 'zeroScoreIncluded': False}
+      1 |  100 | Fargo (1996) | Crime;Drama;Thriller | 0.000685519 | pop 377 | hit True
+      2 |  258 | Contact (1997) | Drama;Sci-Fi | 0.000439866 | pop 307 | hit True
+      3 |  286 | English Patient, The (1996) | Drama;Romance;War | 0.000431018 | pop 279 | hit False
+      4 |  318 | Schindler's List (1993) | Drama;War | 0.000403817 | pop 224 | hit False
+      5 |  357 | One Flew Over the Cuckoo's Nest (1975) | Drama | 0.000377166 | pop 202 | hit False
+      6 |  483 | Casablanca (1942) | Drama;Romance;War | 0.000359689 | pop 197 | hit False
+      7 |  222 | Star Trek: First Contact (1996) | Action;Adventure;Sci-Fi | 0.000332785 | pop 189 | hit True
+      8 |  475 | Trainspotting (1996) | Drama | 0.00032809 | pop 164 | hit False
+      9 |  275 | Sense and Sensibility (1995) | Drama;Romance | 0.000320185 | pop 178 | hit False
+     10 |  423 | E.T. the Extra-Terrestrial (1982) | Children's;Drama;Fantasy;Sci-Fi | 0.000305668 | pop 167 | hit False
+  user 1 | mf | alpha 0.50 | 10 rows (DOM 10) | hits 7/19 | mean pop 72.2 | panel == recommendTopK True | info {'method': 'mf', 'split': 'test', 'alpha': None, 'eligible': 1367, 'fewerThanK': False, 'zeroScoreIncluded': False}
+      1 |    5 | Copycat (1995) | Crime;Drama;Thriller | 3.5806 | pop 28 | hit False
+      2 |    6 | Shanghai Triad (Yao a yao yao dao waipo qiao) (1995) | Drama | 3.5806 | pop 12 | hit True
+      3 |   18 | White Balloon, The (1995) | Drama | 3.5806 | pop 1 | hit True
+      4 |   20 | Angels and Insects (1995) | Drama;Romance | 3.5806 | pop 31 | hit True
+      5 |   32 | Crumb (1994) | Documentary | 3.5806 | pop 46 | hit True
+      6 |   74 | Faster Pussycat! Kill! Kill! (1965) | Action;Comedy;Drama | 3.5806 | pop 2 | hit False
+      7 |  100 | Fargo (1996) | Crime;Drama;Thriller | 3.5806 | pop 377 | hit True
+      8 |  102 | Aristocats, The (1970) | Animation;Children's | 3.5806 | pop 18 | hit False
+      9 |  111 | Truth About Cats & Dogs, The (1996) | Comedy;Romance | 3.5806 | pop 131 | hit True
+     10 |  129 | Bound (1996) | Crime;Drama;Romance;Thriller | 3.5806 | pop 76 | hit True
+  user 98 | popularity | alpha 0.50 | 10 rows (DOM 10) | hits 0/2 | mean pop 323.0 | panel == recommendTopK True | info {'method': 'popularity', 'split': 'test', 'alpha': None, 'eligible': 1588, 'fewerThanK': False, 'zeroScoreIncluded': False}
+      1 |   50 | Star Wars (1977) | Action;Adventure;Romance;Sci-Fi;War | 449 | pop 449 | hit False
+      2 |  100 | Fargo (1996) | Crime;Drama;Thriller | 377 | pop 377 | hit False
+      3 |  181 | Return of the Jedi (1983) | Action;Adventure;Romance;Sci-Fi;War | 339 | pop 339 | hit False
+      4 |  174 | Raiders of the Lost Ark (1981) | Action;Adventure | 312 | pop 312 | hit False
+      5 |   98 | Silence of the Lambs, The (1991) | Drama;Thriller | 308 | pop 308 | hit False
+      6 |  127 | Godfather, The (1972) | Action;Crime;Drama | 308 | pop 308 | hit False
+      7 |  258 | Contact (1997) | Drama;Sci-Fi | 307 | pop 307 | hit False
+      8 |    1 | Toy Story (1995) | Animation;Children's;Comedy | 288 | pop 288 | hit False
+      9 |  286 | English Patient, The (1996) | Drama;Romance;War | 279 | pop 279 | hit False
+     10 |   56 | Pulp Fiction (1994) | Crime;Drama | 263 | pop 263 | hit False
+  user 98 | pagerank | alpha 0.50 | 10 rows (DOM 10) | hits 0/2 | mean pop 294.1 | panel == recommendTopK True | info {'method': 'pagerank', 'split': 'test', 'alpha': 0.5, 'eligible': 1588, 'fewerThanK': False, 'zeroScoreIncluded': False}
+      1 |   50 | Star Wars (1977) | Action;Adventure;Romance;Sci-Fi;War | 0.00259545 | pop 449 | hit False
+      2 |  258 | Contact (1997) | Drama;Sci-Fi | 0.00237519 | pop 307 | hit False
+      3 |  286 | English Patient, The (1996) | Drama;Romance;War | 0.00229125 | pop 279 | hit False
+      4 |  100 | Fargo (1996) | Crime;Drama;Thriller | 0.0022717 | pop 377 | hit False
+      5 |  313 | Titanic (1997) | Action;Drama;Romance | 0.00206343 | pop 219 | hit False
+      6 |  300 | Air Force One (1997) | Action;Thriller | 0.00200342 | pop 235 | hit False
+      7 |  181 | Return of the Jedi (1983) | Action;Adventure;Romance;Sci-Fi;War | 0.00198894 | pop 339 | hit False
+      8 |  288 | Scream (1996) | Horror;Thriller | 0.00186837 | pop 226 | hit False
+      9 |  127 | Godfather, The (1972) | Action;Crime;Drama | 0.00180524 | pop 308 | hit False
+     10 |  302 | L.A. Confidential (1997) | Crime;Film-Noir;Mystery;Thriller | 0.00179813 | pop 202 | hit False
+  user 98 | ppr | alpha 0.50 | 10 rows (DOM 10) | hits 0/2 | mean pop 303.8 | panel == recommendTopK True | info {'method': 'ppr', 'split': 'test', 'alpha': 0.5, 'eligible': 1588, 'fewerThanK': False, 'zeroScoreIncluded': False}
+      1 |   50 | Star Wars (1977) | Action;Adventure;Romance;Sci-Fi;War | 0.000723998 | pop 449 | hit False
+      2 |  174 | Raiders of the Lost Ark (1981) | Action;Adventure | 0.000652047 | pop 312 | hit False
+      3 |  100 | Fargo (1996) | Crime;Drama;Thriller | 0.000646245 | pop 377 | hit False
+      4 |   98 | Silence of the Lambs, The (1991) | Drama;Thriller | 0.000623792 | pop 308 | hit False
+      5 |  127 | Godfather, The (1972) | Action;Crime;Drama | 0.00054937 | pop 308 | hit False
+      6 |  181 | Return of the Jedi (1983) | Action;Adventure;Romance;Sci-Fi;War | 0.000526623 | pop 339 | hit False
+      7 |  172 | Empire Strikes Back, The (1980) | Action;Adventure;Drama;Romance;Sci-Fi;War | 0.000503994 | pop 261 | hit False
+      8 |   56 | Pulp Fiction (1994) | Crime;Drama | 0.000502863 | pop 263 | hit False
+      9 |  318 | Schindler's List (1993) | Drama;War | 0.000489143 | pop 224 | hit False
+     10 |  483 | Casablanca (1942) | Drama;Romance;War | 0.000475034 | pop 197 | hit False
+  user 98 | mf | alpha 0.50 | 10 rows (DOM 10) | hits 0/2 | mean pop 109.7 | panel == recommendTopK True | info {'method': 'mf', 'split': 'test', 'alpha': None, 'eligible': 1588, 'fewerThanK': False, 'zeroScoreIncluded': False}
+      1 |    1 | Toy Story (1995) | Animation;Children's;Comedy | 3.5806 | pop 288 | hit False
+      2 |    2 | GoldenEye (1995) | Action;Adventure;Thriller | 3.5806 | pop 41 | hit False
+      3 |    3 | Four Rooms (1995) | Thriller | 3.5806 | pop 27 | hit False
+      4 |    4 | Get Shorty (1995) | Action;Comedy;Drama | 3.5806 | pop 96 | hit False
+      5 |    5 | Copycat (1995) | Crime;Drama;Thriller | 3.5806 | pop 28 | hit False
+      6 |    6 | Shanghai Triad (Yao a yao yao dao waipo qiao) (1995) | Drama | 3.5806 | pop 12 | hit False
+      7 |    7 | Twelve Monkeys (1995) | Drama;Sci-Fi | 3.5806 | pop 234 | hit False
+      8 |    8 | Babe (1995) | Children's;Comedy;Drama | 3.5806 | pop 137 | hit False
+      9 |    9 | Dead Man Walking (1995) | Drama | 3.5806 | pop 182 | hit False
+     10 |   10 | Richard III (1995) | Drama;War | 3.5806 | pop 52 | hit False
+  common movies users 1 vs 98, popularity: 3 [100, 258, 286]
+  common movies users 1 vs 98, pagerank: 7 [100, 258, 286, 288, 300, 302, 313]
+  common movies users 1 vs 98, ppr: 3 [100, 318, 483]
+  common movies users 1 vs 98, mf: 2 [5, 6]
+B5 one-factor PPR (users A = 1, B = 98):
+  baseline: user 1, alpha 0.85 | common with baseline 10 | mean pop 245.5 | top genres [('Drama', 7), ('Thriller', 3), ('Romance', 3)] | hits 3 | ids [100, 258, 286, 318, 357, 483, 288, 300, 222, 313]
+  seed only: user 98, alpha 0.85 | common with baseline 2 | mean pop 312.9 | top genres [('Drama', 6), ('Action', 5), ('Adventure', 4)] | hits 0 | ids [50, 100, 174, 98, 181, 127, 56, 172, 1, 318]
+  alpha only: user 1, alpha 0.50 | common with baseline 7 | mean pop 228.4 | top genres [('Drama', 9), ('Sci-Fi', 3), ('Romance', 3)] | hits 3 | ids [100, 258, 286, 318, 357, 483, 222, 475, 275, 423]
+B7 exclusion audit (all cohort users):
+  split | method | lists | outside pool | excluded rated | unsorted | <10 | fewerThanK | zero-score | == lowest eligible ids | Recall@10 | same cohort
+  test | popularity | 861 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.076023 | True
+  test | pagerank | 861 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.079693 | True
+  test | ppr | 861 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.112189 | True
+  test | mf | 861 | 0 | 0 | 0 | 0 | 0 | 0 | 861 | 0.021137 | True
+  val | popularity | 846 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.069773 | True
+  val | pagerank | 846 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.064104 | True
+  val | ppr | 846 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0.114483 | True
+  val | mf | 846 | 0 | 0 | 0 | 0 | 0 | 0 | 846 | 0.027215 | True
+  audit time test 3.0 s, val 2.9 s
+B8 exports: downloads complete True; download == exporter {'verification.json': True, 'results.csv': True, 'recommendations.csv': True}
+  recommendations.csv: 100 rows in 10 lists: [(('1', 'mf', ''), 10), (('1', 'pagerank', '0.50'), 10), (('1', 'popularity', ''), 10), (('1', 'ppr', '0.50'), 10), (('1', 'ppr', '0.85'), 10), (('98', 'mf', ''), 10), (('98', 'pagerank', '0.50'), 10), (('98', 'popularity', ''), 10), (('98', 'ppr', '0.50'), 10), (('98', 'ppr', '0.85'), 10)]
+  results.csv rows: 10; verification passed/failed/pending from export: [12, 0, 0]
+Provided two-user demo (separate; NOT my users): users [1, 2], error None
+  baseline: user 1, alpha 0.85, mean pop 245.5, ids [100, 258, 286, 318, 357, 483, 288, 300, 222, 313]
+  change seed only: user 2, alpha 0.85, mean pop 254.9, ids [181, 98, 174, 7, 56, 117, 172, 9, 121, 64]
+  change alpha only: user 1, alpha 0.5, mean pop 228.4, ids [100, 258, 286, 318, 357, 483, 222, 475, 275, 423]
+  common: [{'pair': 'baseline vs change seed only', 'shared': 0, 'of': 10}, {'pair': 'baseline vs change alpha only', 'shared': 7, 'of': 10}, {'pair': 'change seed only vs change alpha only', 'shared': 0, 'of': 10}]
+page errors: {'console': [], 'exceptions': [], 'log': ['error: Failed to load resource: the server responded with a status of 404 (File not found)']}

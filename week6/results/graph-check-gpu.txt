@@ -1,0 +1,68 @@
+env: {'backend': 'webgl', 'version': '4.22.0', 'float32': True, 'webglVersion': 2, 'tensors': 0} | wall 14.1 s
+build: 27 ms | Graph built: 2,554 nodes reported.
+  nodes 2554 = users 943 + movies 1611 | positive edges 45602 | zero-degree users [685] | zero-degree movies 253 | {'firstUser': 1, 'lastUser': 943, 'node943IsUser': False, 'movieAtNode943': 1}
+  summary panel: User nodes 943 Movie nodes 1,611 Nodes (no padding node) 2,554 Positive training edges 45,602 Zero-degree users 1 Zero-degree movies 253
+self-checks: pass 11, fail 0, pending 1
+  #1  PASS    reference graph: uniform alpha=0.85 matches readme 4.1 values  |  C>A>B>D; produced by student pageRank(alpha, {transition: REFERENCE_GRAPH.transition}), iterations 28
+  #2  PASS    reference graph: restart at A alpha=0.85 matches readme 4.1 values  |  A>C>B>D (D stays 0); produced by student personalizedPageRank(seedNode, alpha, {transition: REFERENCE_GRAPH.transition})
+  #3  PASS    row normalization: every nonzero-degree row sums to 1  |  6 positive-degree row(s) sum to 1; 2 dangling row(s) are zero
+  #4  PASS    restart distributions: nonnegative and summing to 1  |  uniform + one-hot over 4 nodes
+  #5  PASS    iterations preserve total probability (sum approx 1)  |  sum = 1.0000002682 over 3 synthetic nodes (graph.js)
+  #6  PASS    stationary scores are nonnegative  |  3 scores nonnegative (graph.js)
+  #7  PASS    one extra update produces approximately the same distribution  |  L1 = 7.972e-7
+  #8  PASS    zero-degree node fixture preserves probability mass  |  danglingMask [false,true,false,false,true]; mass 1.00000028 / 1.00000000
+  #9  PASS    matrix orientation: probability collects at the pointed-to node, not the source  |  p = [0.486486, 0.256757, 0.256757]
+  #10 PENDING recommendTopK: excludes previously rated movies and breaks ties by ascending id  |  TODO(hw6): not implemented yet.
+  #11 PASS    graph mapping: node count equals observed users plus observed movies  |  2554 nodes = 943 users + 1611 movies
+  #12 PASS    public surface: every required name is defined  |  10 functions + ALPHA_GRID + MF_INFO
+reference graph (alpha 0.85):
+  uniform: iterations 28, residual 9.537e-07, converged True
+    A  page 0.3725269437  readme 0.3725268513  |diff| 9.24e-08
+    B  page 0.1958237588  readme 0.1958239118  |diff| 1.53e-07
+    C  page 0.3941493332  readme 0.3941492369  |diff| 9.63e-08
+    D  page 0.0375000015  readme 0.0375000000  |diff| 1.49e-09
+  restartA: iterations 30, residual 4.321e-07, converged True
+    A  page 0.4522329569  readme 0.4522328999  |diff| 5.70e-08
+    B  page 0.1921990961  readme 0.1921989825  |diff| 1.14e-07
+    C  page 0.3555681705  readme 0.3555681176  |diff| 5.29e-08
+    D  page 0.0000000000  readme 0.0000000000  |diff| 0.00e+00
+  firstUniform (p after the FIRST update): 0.2500000000, 0.1437500119, 0.5687500238, 0.0375000015  | residual 0.6375000477, converged False
+  firstRestartA (p after the FIRST update): 0.1500000060, 0.4250000119, 0.4250000119, 0.0000000000  | residual 1.7000000477, converged False
+  error paths: {'outOfRangeIndex': 'personalizedPageRank: restart node index 4 is outside [0, 4)', 'unknownUser': 'personalizedPageRank: user id 99999 is not a user node of the current graph (only users observed in the training split are nodes)', 'badAlpha': 'pageRank: alpha must be a number in [0, 1], got 1.5'}
+rowNormalize(MovieLens): {'ms': 23.300000000279397, 'qIsArray': True, 'qRows': 2554, 'qCols': 2554, 'maskIsArray': True, 'positiveRows': 2300, 'danglingRows': 254, 'danglingRowsNonZero': 0, 'maskVsDegreeMismatch': 0, 'maxRowSumError': 7.993605777301127e-15}
+global PageRank: alpha | iterations | residual | converged | |sum-1| | min p | ms | tensorsDelta
+  0.50 | 19 | 5.467e-07 | True | 1.01e-08 | 2.060e-04 | 115 | 0
+  0.70 | 36 | 7.681e-07 | True | 6.11e-08 | 1.263e-04 | 73 | 0
+  0.85 | 78 | 9.463e-07 | True | 3.19e-07 | 6.415e-05 | 141 | 0
+  0.95 | 242 | 9.952e-07 | True | 3.43e-07 | 2.162e-05 | 427 | 0
+batched PPR: alpha | it min/median/max | not converged | max residual | max |sum-1| | min p | batch s | first-call ms | lookup ms | MB | tensorsDelta
+  0.50 | 1/21/22 | 0 | 9.999e-07 | 2.64e-07 | 0.000e+00 | 0.24 | 241 | 0.0 | 9.65 | 0
+    guard user 1 node 0: p_seed 0.503751 >= 0.50 -> True (margin 0.003751); node index 1 is user 2 with p 0.000106
+    guard user 98 node 97: p_seed 0.501354 >= 0.50 -> True (margin 0.001354); node index 98 is user 99 with p 0.000103
+    guard user 943 node 942: p_seed 0.502851 >= 0.50 -> True (margin 0.002851); node index 943 is movie 1 with p 0.000508
+    zero-degree users: [{'user': 685, 'iterations': 1, 'pSeed': 1}]; min iterations over positive-degree users 21
+  0.70 | 1/41/42 | 0 | 9.987e-07 | 3.04e-07 | 0.000e+00 | 0.39 | 392 | 0.1 | 9.65 | 0
+    guard user 1 node 0: p_seed 0.304728 >= 0.30 -> True (margin 0.004728); node index 1 is user 2 with p 0.000188
+    guard user 98 node 97: p_seed 0.301627 >= 0.30 -> True (margin 0.001627); node index 98 is user 99 with p 0.000222
+    guard user 943 node 942: p_seed 0.303572 >= 0.30 -> True (margin 0.003572); node index 943 is movie 1 with p 0.001249
+    zero-degree users: [{'user': 685, 'iterations': 1, 'pSeed': 1}]; min iterations over positive-degree users 41
+  0.85 | 1/90/95 | 0 | 1.000e-06 | 6.36e-07 | 0.000e+00 | 0.87 | 866 | 0.0 | 9.65 | 0
+    guard user 1 node 0: p_seed 0.154038 >= 0.15 -> True (margin 0.004038); node index 1 is user 2 with p 0.000261
+    guard user 98 node 97: p_seed 0.151249 >= 0.15 -> True (margin 0.001249); node index 98 is user 99 with p 0.000379
+    guard user 943 node 942: p_seed 0.153009 >= 0.15 -> True (margin 0.003009); node index 943 is movie 1 with p 0.002078
+    zero-degree users: [{'user': 685, 'iterations': 1, 'pSeed': 1}]; min iterations over positive-degree users 88
+  0.95 | 1/287/500 | 40 | 1.800e-06 | 7.18e-07 | 0.000e+00 | 4.53 | 4530 | 0.0 | 9.65 | 0
+    guard user 1 node 0: p_seed 0.052558 >= 0.05 -> True (margin 0.002558); node index 1 is user 2 with p 0.000319
+    guard user 98 node 97: p_seed 0.050590 >= 0.05 -> True (margin 0.000590); node index 98 is user 99 with p 0.000546
+    guard user 943 node 942: p_seed 0.051838 >= 0.05 -> True (margin 0.001838); node index 943 is movie 1 with p 0.002770
+    zero-degree users: [{'user': 685, 'iterations': 1, 'pSeed': 1}]; min iterations over positive-degree users 272
+    not converged: 40 users, residual 1.003e-06..1.800e-06, degree 4..236 (median 34; all users median 31); worst [(178, 152), (161, 10), (760, 14), (847, 41), (54, 33)]
+batched vs one-user: user | alpha | it batched/single | residual batched/single | max |delta p| | single ms
+  1 | 0.85 | 90/91 | 9.856e-07/9.071e-07 | 4.657e-09 | 160
+  98 | 0.85 | 90/89 | 9.431e-07/9.968e-07 | 4.424e-09 | 155
+  943 | 0.85 | 91/90 | 8.619e-07/9.751e-07 | 4.191e-09 | 158
+  1 | 0.95 | 303/291 | 9.989e-07/9.801e-07 | 1.863e-09 | 487
+  98 | 0.95 | 299/291 | 9.875e-07/9.763e-07 | 1.397e-09 | 491
+  943 | 0.95 | 280/279 | 9.935e-07/9.926e-07 | 5.122e-09 | 470
+leak: numTensors before 0, after each round [0, 0], after 0; cache before 4 entries 38.58 MB
+page errors: {'console': [], 'exceptions': [], 'log': ['error: Failed to load resource: the server responded with a status of 404 (File not found)']}

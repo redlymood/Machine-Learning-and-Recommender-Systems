@@ -1,0 +1,197 @@
+{
+ "mode": "gpu",
+ "url": "http://127.0.0.1:50888/index.html",
+ "browser": "Chrome/155.0.8059.82",
+ "secondsToReady": 1.4,
+ "page": {
+  "tf": {
+   "version": "4.22.0",
+   "backend": "webgl",
+   "tfStatusText": "TensorFlow.js backend: webgl",
+   "numTensors": 0
+  },
+  "webgl": {
+   "contextAvailable": true,
+   "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)"
+  },
+  "rendered": {
+   "status": "Dataset ready: 943 training users, 1,611 candidate movies on webgl. The MF reference is not trained yet (it trains on first use). Implement the TODO(hw6) functions, then build the graph.",
+   "dataset": "Users observed in training 943 Movies observed in training 1,611 Ratings loaded 100,000 Split: train / validation / test 79,619 / 9,596 / 10,785 Positive training interactions 45,602 Zero-degree users 1 Zero-degree movies 253 Matrix sparsity 93.71% 0 user(s) skipped while splitting. The split is chronological within each user, not globally time-consistent; MovieLens records rating times, not viewing sessions. An unobserved rating is missing data, not a zero.",
+   "graph": "No graph yet. Press “Build graph” to report nodes, edges, zero-degree users, zero-degree movies and positive training interactions. Expected node universe from the training split: 2,554 nodes (943 users + 1,611 movies), 45,602 positive training edge(s), 1 zero-degree user(s), 253 zero-degree movie(s). No padding node.",
+   "userOptions": 861
+  },
+  "mfInfo": {
+   "factors": 16,
+   "epochs": 30,
+   "learningRate": 0.01,
+   "regularization": 0.05,
+   "batchSize": 512,
+   "seed": 20261013,
+   "backend": "webgl",
+   "checkpoint": null,
+   "validationRMSE": null,
+   "trainedAt": null,
+   "history": 0
+  },
+  "mfModelPresent": false,
+  "graphActive": false
+ },
+ "tfOps": {
+  "version": "4.22.0",
+  "ops": {
+   "matMul": true,
+   "tidy": true,
+   "dispose": true,
+   "keep": true,
+   "sum": true,
+   "abs": true,
+   "sub": true,
+   "add": true,
+   "mul": true,
+   "div": true,
+   "tensor2d": true,
+   "transpose": true,
+   "oneHot": true,
+   "ready": true,
+   "getBackend": true,
+   "memory": true
+  },
+  "tensorMethods": {
+   "data": true,
+   "dataSync": true,
+   "array": true,
+   "arraySync": true,
+   "dispose": true
+  },
+  "exportCount": 513,
+  "graphLike": [
+   "GraphModel",
+   "SparseFillEmptyRows",
+   "SparseReshape",
+   "SparseSegmentMean",
+   "SparseSegmentSum",
+   "SparseToDense",
+   "loadGraphModel",
+   "loadGraphModelSync",
+   "sparse",
+   "sparseToDense"
+  ]
+ },
+ "selfChecks": {
+  "log": "HW6 self-checks — pass 2, fail 0, pending 10 (of 12)\nbackend: webgl\nMF reference: not trained yet\n\nPENDING  reference graph: uniform alpha=0.85 matches readme 4.1 values — TODO(hw6): not implemented yet.\nPENDING  reference graph: restart at A alpha=0.85 matches readme 4.1 values — TODO(hw6): not implemented yet.\nPENDING  row normalization: every nonzero-degree row sums to 1 — graph.js `rowNormalize` is still a TODO(hw6) stub\nPASS  restart distributions: nonnegative and summing to 1 — uniform + one-hot over 4 nodes\nPENDING  iterations preserve total probability (sum approx 1) — TODO(hw6): not implemented yet.\nPENDING  stationary scores are nonnegative — TODO(hw6): not implemented yet.\nPENDING  one extra update produces approximately the same distribution — graph.js `rowNormalize` is still a TODO(hw6) stub\nPENDING  zero-degree node fixture preserves probability mass — graph.js `rowNormalize` is still a TODO(hw6) stub\nPENDING  matrix orientation: probability collects at the pointed-to node, not the source — graph.js `rowNormalize` is still a TODO(hw6) stub\nPENDING  recommendTopK: excludes previously rated movies and breaks ties by ascending id — TODO(hw6): not implemented yet.\nPENDING  graph mapping: node count equals observed users plus observed movies — interface unavailable — HW6_INTERFACE: no graph is active; press \"Build graph\" first\nPASS  public surface: every required name is defined — 10 functions + ALPHA_GRID + MF_INFO",
+  "passed": 2,
+  "failed": 0,
+  "pending": 10,
+  "checks": [
+   {
+    "name": "reference graph: uniform alpha=0.85 matches readme 4.1 values",
+    "status": "PENDING",
+    "detail": "TODO(hw6): not implemented yet."
+   },
+   {
+    "name": "reference graph: restart at A alpha=0.85 matches readme 4.1 values",
+    "status": "PENDING",
+    "detail": "TODO(hw6): not implemented yet."
+   },
+   {
+    "name": "row normalization: every nonzero-degree row sums to 1",
+    "status": "PENDING",
+    "detail": "graph.js `rowNormalize` is still a TODO(hw6) stub"
+   },
+   {
+    "name": "restart distributions: nonnegative and summing to 1",
+    "status": "PASS",
+    "detail": "uniform + one-hot over 4 nodes"
+   },
+   {
+    "name": "iterations preserve total probability (sum approx 1)",
+    "status": "PENDING",
+    "detail": "TODO(hw6): not implemented yet."
+   },
+   {
+    "name": "stationary scores are nonnegative",
+    "status": "PENDING",
+    "detail": "TODO(hw6): not implemented yet."
+   },
+   {
+    "name": "one extra update produces approximately the same distribution",
+    "status": "PENDING",
+    "detail": "graph.js `rowNormalize` is still a TODO(hw6) stub"
+   },
+   {
+    "name": "zero-degree node fixture preserves probability mass",
+    "status": "PENDING",
+    "detail": "graph.js `rowNormalize` is still a TODO(hw6) stub"
+   },
+   {
+    "name": "matrix orientation: probability collects at the pointed-to node, not the source",
+    "status": "PENDING",
+    "detail": "graph.js `rowNormalize` is still a TODO(hw6) stub"
+   },
+   {
+    "name": "recommendTopK: excludes previously rated movies and breaks ties by ascending id",
+    "status": "PENDING",
+    "detail": "TODO(hw6): not implemented yet."
+   },
+   {
+    "name": "graph mapping: node count equals observed users plus observed movies",
+    "status": "PENDING",
+    "detail": "interface unavailable — HW6_INTERFACE: no graph is active; press \"Build graph\" first"
+   },
+   {
+    "name": "public surface: every required name is defined",
+    "status": "PASS",
+    "detail": "10 functions + ALPHA_GRID + MF_INFO"
+   }
+  ],
+  "numTensorsAfter": 0,
+  "mfTrainedAfter": null
+ },
+ "network": [
+  {
+   "url": "http://127.0.0.1:50888/index.html",
+   "status": 200
+  },
+  {
+   "url": "http://127.0.0.1:50888/style.css",
+   "status": 200
+  },
+  {
+   "url": "http://127.0.0.1:50888/data.js",
+   "status": 200
+  },
+  {
+   "url": "http://127.0.0.1:50888/graph.js",
+   "status": 200
+  },
+  {
+   "url": "http://127.0.0.1:50888/script.js",
+   "status": 200
+  },
+  {
+   "url": "http://127.0.0.1:50888/vendor/d3.min.js",
+   "status": 200
+  },
+  {
+   "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.22.0/dist/tf.min.js",
+   "status": 200
+  },
+  {
+   "url": "http://127.0.0.1:50888/u.item",
+   "status": 200
+  },
+  {
+   "url": "http://127.0.0.1:50888/u.data",
+   "status": 200
+  },
+  {
+   "url": "http://127.0.0.1:50888/favicon.ico",
+   "status": 404
+  }
+ ],
+ "console": [],
+ "exceptions": [],
+ "logEntries": [
+  "error: Failed to load resource: the server responded with a status of 404 (File not found)"
+ ]
+}

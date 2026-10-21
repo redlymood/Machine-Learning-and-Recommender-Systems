@@ -1,0 +1,4 @@
+uniform   float64:  28 iterations, residual 9.67e-07, max |p - readme| 1.72e-07 -> within 1e-6
+uniform   float32:  28 iterations, residual 9.69e-07, max |p - readme| 1.68e-07 -> within 1e-6
+restart A float64:  30 iterations, residual 4.66e-07, max |p - readme| 8.28e-08 -> within 1e-6
+restart A float32:  30 iterations, residual 4.77e-07, max |p - readme| 8.38e-08 -> within 1e-6

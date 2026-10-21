@@ -1,0 +1,31 @@
+HW6 independent stats (Python, raw week6/u.data + u.item; no page code)
+
+[dataset]
+ratings                       100000
+users (distinct in u.data)    943   (max id 943)
+movies in u.item              1682   (max id 1682); distinct rated movies 1682
+sparsity 1 - R/(U*M)          0.936953  (93.70%)
+sparsity, page formula        0.937058  (1 - split total / ((maxUser+1)*(maxMovie+1)), script.js:1960-1961)
+
+[split: per-user chronological 80/10/10, floor counts, ties by movieId, skip n < 5]
+train / val / test            79619 / 9596 / 10785   (sum 100000)
+excluded users (n < 5)        0
+
+[graph, readme 3.1]
+positive training edges       45602   (distinct (user, movie) with train rating >= 4)
+graph nodes                   2554 = 943 users + 1611 movies (no padding)
+directed transitions (2|E|)   91204
+density of R                  0.030018
+zero-degree users             1   ids [685]
+zero-degree movies            253
+zero-degree nodes total       254
+users with >= 1 positive edge 942; movies with >= 1 positive edge 1358
+
+[candidate pool, readme 5]
+training candidate pool       1611 movies (observed in train)
+metadata movies not in pool   71
+
+[shared cohorts, readme 7.1 / 7.2 (for the PPR cost estimate)]
+val  cohort users             846   relevant eligible 4614; relevant ratings absent from pool 4; split users without eligible relevant 97
+test cohort users             861   relevant eligible 5142; relevant ratings absent from pool 13; split users without eligible relevant 82
+val cohort ∪ test cohort      907

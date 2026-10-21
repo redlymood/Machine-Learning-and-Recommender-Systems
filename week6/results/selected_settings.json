@@ -1,0 +1,68 @@
+{
+  "selected_alpha": 0.5,
+  "selection": "validation Recall@10 over alpha in {0.50, 0.70, 0.85, 0.95}; exact ties go to the smaller alpha (provided hw6RunAlphaSweep, strict > over the ascending grid, script.js:1793-1820)",
+  "pagerank_alpha": 0.5,
+  "pagerank_note": "global PageRank uses the selected PPR alpha as a disclosed control (readme 6.1); it was not optimised independently",
+  "sweep": [
+    {
+      "alpha": 0.5,
+      "val_recall_at_10": 0.11448315913208877,
+      "cohort_size": 846
+    },
+    {
+      "alpha": 0.7,
+      "val_recall_at_10": 0.1047969507641043,
+      "cohort_size": 846
+    },
+    {
+      "alpha": 0.85,
+      "val_recall_at_10": 0.09002077155336492,
+      "cohort_size": 846
+    },
+    {
+      "alpha": 0.95,
+      "val_recall_at_10": 0.07375030387909676,
+      "cohort_size": 846
+    }
+  ],
+  "ppr_not_converged_columns": [
+    {
+      "alpha": 0.5,
+      "notConverged": 0,
+      "batchSeconds": 0.30939999999990686
+    },
+    {
+      "alpha": 0.7,
+      "notConverged": 0,
+      "batchSeconds": 0.38960000000009315
+    },
+    {
+      "alpha": 0.85,
+      "notConverged": 0,
+      "batchSeconds": 0.8807000000001862
+    },
+    {
+      "alpha": 0.95,
+      "notConverged": 40,
+      "batchSeconds": 4.5117999999998135
+    }
+  ],
+  "mf_reference": {
+    "factors": 16,
+    "epochs": 30,
+    "learningRate": 0.01,
+    "regularization": 0.05,
+    "batchSize": 512,
+    "seed": 20261013,
+    "backend": "webgl",
+    "checkpoint": 1,
+    "validationRMSE": 1.1829944264078285,
+    "trainedAt": "2026-10-20T17:47:57.310Z"
+  },
+  "mf_note": "provided TF.js reference; its checkpoint equals the mu-only baseline (collapsed, all scores tie)",
+  "tol": 1e-06,
+  "max_iter": 500,
+  "K": 10,
+  "backend": "webgl",
+  "tfjs": "4.22.0"
+}

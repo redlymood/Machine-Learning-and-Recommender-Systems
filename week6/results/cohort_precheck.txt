@@ -1,0 +1,5 @@
+user | positive train edges | split | relevant (>= 4) | not in pool | eligible relevant | evaluable
+1 | 131 | val | 13 | 0 | 13 [9, 12, 16, 44, 51, 58, 66, 75, 76, 86, 87, 208, 241] | True
+1 | 131 | test | 19 | 0 | 19 [6, 18, 20, 32, 100, 111, 129, 154, 169, 171, 178, 209, 221, 222, 228, 242, 256, 258, 270] | True
+98 | 10 | val | 1 | 0 | 1 [116] | True
+98 | 10 | test | 2 | 0 | 2 [25, 629] | True

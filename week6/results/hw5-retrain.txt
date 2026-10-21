@@ -1,0 +1,27 @@
+week5 Train on webgl: 84.2 s (wall 86.5 s), inputs {'epochs': '20', 'lr': '0.01', 'reg': '0.05', 'batch-size': '64'}
+status: Trained 20 epoch(s) on webgl — best val RMSE 1.0088 at epoch 2.
+selected checkpoint: epoch 2, val RMSE 1.008837, test RMSE 1.045873 (in-memory val 1.008837)
+reproduces HW5 (epoch 2, val 1.0088, test 1.0459): True
+max |factor difference| vs the HW5 export: 0.000e+00; mu 3.5806026199776437 vs 3.5806026199776437
+epoch | train RMSE | val RMSE
+   1 | 0.888380 | 1.030405
+   2 | 0.799912 | 1.008837
+   3 | 0.756816 | 1.012525
+   4 | 0.732035 | 1.018863
+   5 | 0.719192 | 1.025996
+   6 | 0.713406 | 1.027757
+   7 | 0.711484 | 1.034665
+   8 | 0.705199 | 1.029754
+   9 | 0.705963 | 1.034389
+  10 | 0.701416 | 1.036329
+  11 | 0.700345 | 1.039860
+  12 | 0.700249 | 1.034955
+  13 | 0.702492 | 1.038313
+  14 | 0.698573 | 1.033833
+  15 | 0.697117 | 1.033383
+  16 | 0.695550 | 1.031941
+  17 | 0.696698 | 1.035672
+  18 | 0.694944 | 1.038443
+  19 | 0.696669 | 1.036750
+  20 | 0.697132 | 1.042812
+tensors after: 2; page errors: {'console': [], 'exceptions': [], 'log': ['error: Failed to load resource: the server responded with a status of 404 (File not found)']}

@@ -1,0 +1,40 @@
+MF probe (webgl): trained True in 18.4 s (wall 21.3 s)
+status: MF reference trained: 16 factors, checkpoint epoch 1, validation RMSE 1.1830.
+MF_INFO: {'factors': 16, 'epochs': 30, 'learningRate': 0.01, 'regularization': 0.05, 'batchSize': 512, 'seed': 20261013, 'backend': 'webgl', 'checkpoint': 1, 'validationRMSE': 1.1829944264078285, 'trainedAt': '2026-10-20T17:35:27.049Z'}
+epoch | train RMSE | val RMSE
+   1 | 1.105208 | 1.182994
+   2 | 1.105208 | 1.182994
+   3 | 1.105208 | 1.182994
+   4 | 1.105208 | 1.182994
+   5 | 1.105208 | 1.182994
+   6 | 1.105208 | 1.182994
+   7 | 1.105208 | 1.182994
+   8 | 1.105208 | 1.182994
+   9 | 1.105208 | 1.182994
+  10 | 1.105208 | 1.182994
+  11 | 1.105208 | 1.182994
+  12 | 1.105208 | 1.182994
+  13 | 1.105208 | 1.182994
+  14 | 1.105208 | 1.182994
+  15 | 1.105208 | 1.182994
+  16 | 1.105208 | 1.182994
+  17 | 1.105208 | 1.182994
+  18 | 1.105208 | 1.182994
+  19 | 1.105208 | 1.182994
+  20 | 1.105208 | 1.182994
+  21 | 1.105208 | 1.182994
+  22 | 1.105208 | 1.182994
+  23 | 1.105208 | 1.182994
+  24 | 1.105208 | 1.182994
+  25 | 1.105208 | 1.182994
+  26 | 1.105208 | 1.182994
+  27 | 1.105208 | 1.182994
+  28 | 1.105208 | 1.182994
+  29 | 1.105208 | 1.182994
+  30 | 1.105208 | 1.182994
+checkpoint (restored) RMSE: train 1.105208, val 1.182994, test 1.228900
+mu-only baseline (mu 3.580603): train 1.105209, val 1.182995, test 1.228900
+row norms: {'pMeanTrainUsers': 3.525094208757954e-05, 'pMaxTrainUsers': 6.210006860201328e-05, 'qMeanTrainMovies': 3.517689155124378e-05, 'qMaxTrainMovies': 6.821378863562136e-05, 'pMeanAllRows': 3.5270232702794553e-05, 'qMeanAllRows': 3.516457869566678e-05, 'rowsP': 944, 'rowsQ': 1683}
+mfScores over candidates: {'1': {'n': 1611, 'mean': 3.5806026458740234, 'std': 0, 'min': 3.5806026458740234, 'max': 3.5806026458740234}, '98': {'n': 1611, 'mean': 3.5806026458740234, 'std': 0, 'min': 3.5806026458740234, 'max': 3.5806026458740234}}
+tensors after: 10
+page errors: {'console': [], 'exceptions': [], 'log': ['error: Failed to load resource: the server responded with a status of 404 (File not found)']}

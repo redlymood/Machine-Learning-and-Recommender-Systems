@@ -1,0 +1,50 @@
+{
+ "backend": "webgl",
+ "nU": 943,
+ "nM": 1611,
+ "edges": 45602,
+ "runs": [
+  {
+   "B": 1,
+   "iters": 300,
+   "readback": "dataSync",
+   "msPerIter": 1.203,
+   "gflopPerIter": 0.0061,
+   "gflops": 5.1
+  },
+  {
+   "B": 1,
+   "iters": 300,
+   "readback": "data",
+   "msPerIter": 4.969,
+   "gflopPerIter": 0.0061,
+   "gflops": 1.2
+  },
+  {
+   "B": 1,
+   "iters": 300,
+   "readback": "none",
+   "msPerIter": 0.426,
+   "gflopPerIter": 0.0061,
+   "gflops": 14.3
+  },
+  {
+   "B": 943,
+   "iters": 40,
+   "readback": "dataSync",
+   "msPerIter": 6.19,
+   "gflopPerIter": 5.7303,
+   "gflops": 925.7
+  },
+  {
+   "B": 943,
+   "iters": 40,
+   "readback": "none",
+   "msPerIter": 6.128,
+   "gflopPerIter": 5.7303,
+   "gflops": 935.2
+  }
+ ],
+ "totalSeconds": 2.68,
+ "tensorsLeaked": 0
+}

@@ -1,0 +1,13 @@
+context: mean popularity over the 1,611 pool movies 28.3; over the 45,602 positive training edges 113.4
+user 1: 217 training ratings, 131 positive (>= 4)
+  genre shares, all training ratings: Drama 38%, Comedy 33%, Action 29%, Thriller 19%, Sci-Fi 17%, Adventure 16%
+  genre shares, positive movies:      Drama 47%, Comedy 30%, Action 27%, Sci-Fi 21%, Thriller 19%, Romance 17%
+  mean popularity of positive movies: 107.0
+  5 most popular positive movies:  50 Star Wars (1977) (pop 449); 181 Return of the Jedi (1983) (pop 339); 174 Raiders of the Lost Ark (1981) (pop 312); 98 Silence of the Lambs, The (1991) (pop 308); 127 Godfather, The (1972) (pop 308)
+  5 least popular positive movies: 113 Horseman on the Roof, The (Hussard sur le toit, Le) (1995) (pop 7); 267 unknown (pop 5); 84 Robert A. Heinlein's The Puppet Masters (1994) (pop 4); 119 Maya Lin: A Strong Clear Vision (1994) (pop 3); 146 Unhook the Stars (1996) (pop 2)
+user 98: 21 training ratings, 10 positive (>= 4)
+  genre shares, all training ratings: Comedy 90%, Romance 29%, Drama 24%, Action 14%, Adventure 14%, Mystery 10%
+  genre shares, positive movies:      Comedy 90%, Drama 30%, Action 20%, Romance 20%, Crime 10%, Adventure 10%
+  mean popularity of positive movies: 111.8
+  5 most popular positive movies:  210 Indiana Jones and the Last Crusade (1989) (pop 200); 194 Sting, The (1973) (pop 161); 435 Butch Cassidy and the Sundance Kid (1969) (pop 134); 211 M*A*S*H (1970) (pop 131); 514 Annie Hall (1977) (pop 114)
+  5 least popular positive movies: 523 Cool Hand Luke (1967) (pop 114); 659 Arsenic and Old Lace (1944) (pop 76); 47 Ed Wood (1994) (pop 74); 428 Harold and Maude (1971) (pop 67); 517 Manhattan (1979) (pop 47)

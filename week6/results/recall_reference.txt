@@ -1,0 +1,34 @@
+D1 float64 Recall@10 on the TEST cohort (861 users, == page cohort), alpha 0.5
+method | page recall | float64 recall | users: list differs (order) | set differs | hits differ | max float64 gap of swapped movies
+popularity | 0.076023 | 0.076023 | 0 | 0 | 0 | 0.000e+00
+pagerank | 0.079693 | 0.079693 | 0 | 0 | 0 | 0.000e+00
+ppr | 0.112189 | 0.112189 | 0 | 0 | 0 | 0.000e+00
+  float64 iterations: pagerank 19 (converged True); PPR min/median/max 21/21/21, not converged 0
+D2 alpha 0.95, 40 users not converged on the page (float32, residual 1.003e-06..1.800e-06)
+  float64 same rule: iterations 283..283, all converged True; fixed point 642..644 iterations
+  max |delta p| page vs float64 same rule 1.146e-08, vs fixed point 9.463e-09
+  identical Top-10 movie ids (no exclusions): 40/40; identical test Top-10 (train+val excluded): 40/40
+D3 hand check (PPR, alpha 0.5, test exclusions)
+  user 98: 1588 eligible candidates; page Recall@10 0.000000; hits []; score at rank 10 / 11: 0.000475034 / 0.000474808
+    relevant   25 Birdcage, The (1996) | page rank 111 | float64 rank 111 | score 0.000194029 | pop 134
+    relevant  629 Victor/Victoria (1982) | page rank 389 | float64 rank 389 | score 5.49537e-05 | pop 28
+  user 1: 1367 eligible candidates; page Recall@10 0.157895; hits [100, 258, 222]; score at rank 10 / 11: 0.000305668 / 0.000299719
+    relevant    6 Shanghai Triad (Yao a yao yao dao waipo qiao) (1995) | page rank 428 | float64 rank 428 | score 2.27943e-05 | pop 12
+    relevant   18 White Balloon, The (1995) | page rank 972 | float64 rank 972 | score 2.03505e-06 | pop 1
+    relevant   20 Angels and Insects (1995) | page rank 208 | float64 rank 208 | score 6.6586e-05 | pop 31
+    relevant   32 Crumb (1994) | page rank 144 | float64 rank 144 | score 8.88925e-05 | pop 46
+    relevant  100 Fargo (1996) | page rank 1 | float64 rank 1 | score 0.000685519 | pop 377
+    relevant  111 Truth About Cats & Dogs, The (1996) | page rank 35 | float64 rank 35 | score 0.000211059 | pop 131
+    relevant  129 Bound (1996) | page rank 68 | float64 rank 68 | score 0.000148917 | pop 76
+    relevant  154 Monty Python's Life of Brian (1979) | page rank 42 | float64 rank 42 | score 0.00019717 | pop 95
+    relevant  169 Wrong Trousers, The (1993) | page rank 43 | float64 rank 43 | score 0.000183591 | pop 90
+    relevant  171 Delicatessen (1991) | page rank 157 | float64 rank 157 | score 8.13103e-05 | pop 39
+    relevant  178 12 Angry Men (1957) | page rank 57 | float64 rank 57 | score 0.00016362 | pop 93
+    relevant  209 This Is Spinal Tap (1984) | page rank 27 | float64 rank 27 | score 0.000238438 | pop 116
+    relevant  221 Breaking the Waves (1996) | page rank 154 | float64 rank 154 | score 8.48283e-05 | pop 39
+    relevant  222 Star Trek: First Contact (1996) | page rank 7 | float64 rank 7 | score 0.000332785 | pop 189
+    relevant  228 Star Trek: The Wrath of Khan (1982) | page rank 22 | float64 rank 22 | score 0.000250684 | pop 125
+    relevant  242 Kolya (1996) | page rank 89 | float64 rank 89 | score 0.0001249 | pop 78
+    relevant  256 When the Cats Away (Chacun cherche son chat) (1996) | page rank 542 | float64 rank 542 | score 1.34564e-05 | pop 7
+    relevant  258 Contact (1997) | page rank 2 | float64 rank 2 | score 0.000439866 | pop 307
+    relevant  270 Gattaca (1997) | page rank 165 | float64 rank 165 | score 7.81453e-05 | pop 67

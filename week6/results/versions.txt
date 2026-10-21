@@ -1,0 +1,7 @@
+TensorFlow.js: https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.22.0/dist/tf.min.js
+d3 (vendor/d3.min.js header): // https://d3js.org v7.9.0 Copyright 2010-2023 Mike Bostock
+Chrome reported by the recorded headless run (results/page-gpu.json, Browser.getVersion): Chrome/155.0.8059.82
+Chrome installed now (--version): Google Chrome 155.0.8059.85
+Chrome version folders and install times (local time): [('155.0.8059.82', '2026-10-16 12:01'), ('155.0.8059.85', '2026-10-20 23:55')]
+Python: 3.14.7
+numpy: 2.5.3

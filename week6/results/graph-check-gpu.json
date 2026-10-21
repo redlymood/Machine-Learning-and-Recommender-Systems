@@ -1,0 +1,814 @@
+{
+ "env": {
+  "backend": "webgl",
+  "version": "4.22.0",
+  "float32": true,
+  "webglVersion": 2,
+  "tensors": 0
+ },
+ "build": {
+  "ms": 27.09999999962747,
+  "status": "Graph built: 2,554 nodes reported.",
+  "nodeCount": 2554,
+  "nUsers": 943,
+  "nMovies": 1611,
+  "positiveEdges": 45602,
+  "zeroDegreeUsers": [
+   685
+  ],
+  "zeroDegreeMovies": 253,
+  "paddingCheck": {
+   "firstUser": 1,
+   "lastUser": 943,
+   "node943IsUser": false,
+   "movieAtNode943": 1
+  },
+  "summary": "User nodes 943 Movie nodes 1,611 Nodes (no padding node) 2,554 Positive training edges 45,602 Zero-degree users 1 Zero-degree movies 253"
+ },
+ "selfChecks": {
+  "passed": 11,
+  "failed": 0,
+  "pending": 1,
+  "checks": [
+   {
+    "name": "reference graph: uniform alpha=0.85 matches readme 4.1 values",
+    "status": "PASS",
+    "detail": "C>A>B>D; produced by student pageRank(alpha, {transition: REFERENCE_GRAPH.transition}), iterations 28"
+   },
+   {
+    "name": "reference graph: restart at A alpha=0.85 matches readme 4.1 values",
+    "status": "PASS",
+    "detail": "A>C>B>D (D stays 0); produced by student personalizedPageRank(seedNode, alpha, {transition: REFERENCE_GRAPH.transition})"
+   },
+   {
+    "name": "row normalization: every nonzero-degree row sums to 1",
+    "status": "PASS",
+    "detail": "6 positive-degree row(s) sum to 1; 2 dangling row(s) are zero"
+   },
+   {
+    "name": "restart distributions: nonnegative and summing to 1",
+    "status": "PASS",
+    "detail": "uniform + one-hot over 4 nodes"
+   },
+   {
+    "name": "iterations preserve total probability (sum approx 1)",
+    "status": "PASS",
+    "detail": "sum = 1.0000002682 over 3 synthetic nodes (graph.js)"
+   },
+   {
+    "name": "stationary scores are nonnegative",
+    "status": "PASS",
+    "detail": "3 scores nonnegative (graph.js)"
+   },
+   {
+    "name": "one extra update produces approximately the same distribution",
+    "status": "PASS",
+    "detail": "L1 = 7.972e-7"
+   },
+   {
+    "name": "zero-degree node fixture preserves probability mass",
+    "status": "PASS",
+    "detail": "danglingMask [false,true,false,false,true]; mass 1.00000028 / 1.00000000"
+   },
+   {
+    "name": "matrix orientation: probability collects at the pointed-to node, not the source",
+    "status": "PASS",
+    "detail": "p = [0.486486, 0.256757, 0.256757]"
+   },
+   {
+    "name": "recommendTopK: excludes previously rated movies and breaks ties by ascending id",
+    "status": "PENDING",
+    "detail": "TODO(hw6): not implemented yet."
+   },
+   {
+    "name": "graph mapping: node count equals observed users plus observed movies",
+    "status": "PASS",
+    "detail": "2554 nodes = 943 users + 1611 movies"
+   },
+   {
+    "name": "public surface: every required name is defined",
+    "status": "PASS",
+    "detail": "10 functions + ALPHA_GRID + MF_INFO"
+   }
+  ]
+ },
+ "reference": {
+  "uniform": {
+   "p": [
+    0.37252694368362427,
+    0.1958237588405609,
+    0.3941493332386017,
+    0.03750000149011612
+   ],
+   "iterations": 28,
+   "residual": 9.5367431640625e-07,
+   "converged": true
+  },
+  "restartA": {
+   "p": [
+    0.4522329568862915,
+    0.19219909608364105,
+    0.35556817054748535,
+    0
+   ],
+   "iterations": 30,
+   "residual": 4.3213367462158203e-07,
+   "converged": true
+  },
+  "firstUniform": {
+   "p": [
+    0.25,
+    0.14375001192092896,
+    0.5687500238418579,
+    0.03750000149011612
+   ],
+   "iterations": 1,
+   "residual": 0.6375000476837158,
+   "converged": false
+  },
+  "firstRestartA": {
+   "p": [
+    0.15000000596046448,
+    0.42500001192092896,
+    0.42500001192092896,
+    0
+   ],
+   "iterations": 1,
+   "residual": 1.7000000476837158,
+   "converged": false
+  },
+  "readme": {
+   "uniform": {
+    "alpha": 0.85,
+    "restart": "uniform",
+    "p": [
+     0.3725268513,
+     0.1958239118,
+     0.3941492369,
+     0.0375
+    ],
+    "ranking": [
+     2,
+     0,
+     1,
+     3
+    ],
+    "rankingLabel": "C > A > B > D"
+   },
+   "restartAtA": {
+    "alpha": 0.85,
+    "restart": "A",
+    "restartIndex": 0,
+    "p": [
+     0.4522328999,
+     0.1921989825,
+     0.3555681176,
+     0
+    ],
+    "ranking": [
+     0,
+     2,
+     1,
+     3
+    ],
+    "rankingLabel": "A > C > B > D"
+   }
+  },
+  "errors": {
+   "outOfRangeIndex": "personalizedPageRank: restart node index 4 is outside [0, 4)",
+   "unknownUser": "personalizedPageRank: user id 99999 is not a user node of the current graph (only users observed in the training split are nodes)",
+   "badAlpha": "pageRank: alpha must be a number in [0, 1], got 1.5"
+  }
+ },
+ "rowNormalize": {
+  "ms": 23.300000000279397,
+  "qIsArray": true,
+  "qRows": 2554,
+  "qCols": 2554,
+  "maskIsArray": true,
+  "positiveRows": 2300,
+  "danglingRows": 254,
+  "danglingRowsNonZero": 0,
+  "maskVsDegreeMismatch": 0,
+  "maxRowSumError": 7.993605777301127e-15
+ },
+ "pagerank": [
+  {
+   "alpha": 0.5,
+   "iterations": 19,
+   "residual": 5.466572474688292e-07,
+   "converged": true,
+   "sumError": 1.0142684914171696e-08,
+   "minP": 0.0002060156548395753,
+   "ms": 115.20000000018626,
+   "n": 2554,
+   "tensorsDelta": 0
+  },
+  {
+   "alpha": 0.7,
+   "iterations": 36,
+   "residual": 7.681228453293443e-07,
+   "converged": true,
+   "sumError": 6.108894012868404e-08,
+   "minP": 0.00012625199451576918,
+   "ms": 73.20000000018626,
+   "n": 2554,
+   "tensorsDelta": 0
+  },
+  {
+   "alpha": 0.85,
+   "iterations": 78,
+   "residual": 9.463110473006964e-07,
+   "converged": true,
+   "sumError": 3.192471922375262e-07,
+   "minP": 6.415466486942023e-05,
+   "ms": 140.6999999997206,
+   "n": 2554,
+   "tensorsDelta": 0
+  },
+  {
+   "alpha": 0.95,
+   "iterations": 242,
+   "residual": 9.952345862984657e-07,
+   "converged": true,
+   "sumError": 3.428140189498663e-07,
+   "minP": 2.161974953196477e-05,
+   "ms": 426.60000000009313,
+   "n": 2554,
+   "tensorsDelta": 0
+  }
+ ],
+ "ppr": [
+  {
+   "alpha": 0.5,
+   "columns": 943,
+   "n": 2554,
+   "batchSeconds": 0.24089999999990686,
+   "firstCallMs": 241,
+   "lookupMs": 0,
+   "itMin": 1,
+   "itMedian": 21,
+   "itMax": 22,
+   "notConverged": 0,
+   "maxResidual": 9.998555015044985e-07,
+   "maxSumError": 2.6408190478832694e-07,
+   "minP": 0,
+   "megabytes": 9.645947,
+   "guard": [
+    {
+     "user": 1,
+     "node": 0,
+     "pSeed": 0.5037512183189392,
+     "bound": 0.5,
+     "margin": 0.003751218318939209,
+     "holds": true,
+     "iterations": 22,
+     "converged": true,
+     "pAtNodeIndexEqualToId": 0.00010642663983162493,
+     "nodeIndexEqualToIdIs": "user 2"
+    },
+    {
+     "user": 98,
+     "node": 97,
+     "pSeed": 0.501354455947876,
+     "bound": 0.5,
+     "margin": 0.0013544559478759766,
+     "holds": true,
+     "iterations": 21,
+     "converged": true,
+     "pAtNodeIndexEqualToId": 0.00010259028931614012,
+     "nodeIndexEqualToIdIs": "user 99"
+    },
+    {
+     "user": 943,
+     "node": 942,
+     "pSeed": 0.5028505325317383,
+     "bound": 0.5,
+     "margin": 0.0028505325317382812,
+     "holds": true,
+     "iterations": 21,
+     "converged": true,
+     "pAtNodeIndexEqualToId": 0.0005083451396785676,
+     "nodeIndexEqualToIdIs": "movie 1"
+    }
+   ],
+   "itMinPositive": 21,
+   "userDegreeMedian": 31,
+   "stuck": [],
+   "zeroUser": [
+    {
+     "user": 685,
+     "iterations": 1,
+     "pSeed": 1
+    }
+   ],
+   "tensorsDelta": 0
+  },
+  {
+   "alpha": 0.7,
+   "columns": 943,
+   "n": 2554,
+   "batchSeconds": 0.3923999999999069,
+   "firstCallMs": 392.39999999990687,
+   "lookupMs": 0.10000000009313226,
+   "itMin": 1,
+   "itMedian": 41,
+   "itMax": 42,
+   "notConverged": 0,
+   "maxResidual": 9.98671453089628e-07,
+   "maxSumError": 3.035776217075181e-07,
+   "minP": 0,
+   "megabytes": 9.645947,
+   "guard": [
+    {
+     "user": 1,
+     "node": 0,
+     "pSeed": 0.3047284185886383,
+     "bound": 0.30000000000000004,
+     "margin": 0.004728418588638261,
+     "holds": true,
+     "iterations": 42,
+     "converged": true,
+     "pAtNodeIndexEqualToId": 0.0001879322953755036,
+     "nodeIndexEqualToIdIs": "user 2"
+    },
+    {
+     "user": 98,
+     "node": 97,
+     "pSeed": 0.3016267418861389,
+     "bound": 0.30000000000000004,
+     "margin": 0.0016267418861388716,
+     "holds": true,
+     "iterations": 41,
+     "converged": true,
+     "pAtNodeIndexEqualToId": 0.00022152948076836765,
+     "nodeIndexEqualToIdIs": "user 99"
+    },
+    {
+     "user": 943,
+     "node": 942,
+     "pSeed": 0.30357223749160767,
+     "bound": 0.30000000000000004,
+     "margin": 0.0035722374916076216,
+     "holds": true,
+     "iterations": 41,
+     "converged": true,
+     "pAtNodeIndexEqualToId": 0.0012485425686463714,
+     "nodeIndexEqualToIdIs": "movie 1"
+    }
+   ],
+   "itMinPositive": 41,
+   "userDegreeMedian": 31,
+   "stuck": [],
+   "zeroUser": [
+    {
+     "user": 685,
+     "iterations": 1,
+     "pSeed": 1
+    }
+   ],
+   "tensorsDelta": 0
+  },
+  {
+   "alpha": 0.85,
+   "columns": 943,
+   "n": 2554,
+   "batchSeconds": 0.8661999999997206,
+   "firstCallMs": 866.2999999998137,
+   "lookupMs": 0,
+   "itMin": 1,
+   "itMedian": 90,
+   "itMax": 95,
+   "notConverged": 0,
+   "maxResidual": 9.999587291531498e-07,
+   "maxSumError": 6.357099664455745e-07,
+   "minP": 0,
+   "megabytes": 9.645947,
+   "guard": [
+    {
+     "user": 1,
+     "node": 0,
+     "pSeed": 0.15403766930103302,
+     "bound": 0.15000000000000002,
+     "margin": 0.004037669301032998,
+     "holds": true,
+     "iterations": 90,
+     "converged": true,
+     "pAtNodeIndexEqualToId": 0.000261411361861974,
+     "nodeIndexEqualToIdIs": "user 2"
+    },
+    {
+     "user": 98,
+     "node": 97,
+     "pSeed": 0.15124905109405518,
+     "bound": 0.15000000000000002,
+     "margin": 0.0012490510940551536,
+     "holds": true,
+     "iterations": 90,
+     "converged": true,
+     "pAtNodeIndexEqualToId": 0.0003792535571847111,
+     "nodeIndexEqualToIdIs": "user 99"
+    },
+    {
+     "user": 943,
+     "node": 942,
+     "pSeed": 0.15300855040550232,
+     "bound": 0.15000000000000002,
+     "margin": 0.003008550405502297,
+     "holds": true,
+     "iterations": 91,
+     "converged": true,
+     "pAtNodeIndexEqualToId": 0.002077872632071376,
+     "nodeIndexEqualToIdIs": "movie 1"
+    }
+   ],
+   "itMinPositive": 88,
+   "userDegreeMedian": 31,
+   "stuck": [],
+   "zeroUser": [
+    {
+     "user": 685,
+     "iterations": 1,
+     "pSeed": 1
+    }
+   ],
+   "tensorsDelta": 0
+  },
+  {
+   "alpha": 0.95,
+   "columns": 943,
+   "n": 2554,
+   "batchSeconds": 4.529700000000187,
+   "firstCallMs": 4529.700000000186,
+   "lookupMs": 0,
+   "itMin": 1,
+   "itMedian": 287,
+   "itMax": 500,
+   "notConverged": 40,
+   "maxResidual": 1.7998563635046594e-06,
+   "maxSumError": 7.179432941484265e-07,
+   "minP": 0,
+   "megabytes": 9.645947,
+   "guard": [
+    {
+     "user": 1,
+     "node": 0,
+     "pSeed": 0.05255774408578873,
+     "bound": 0.050000000000000044,
+     "margin": 0.0025577440857886824,
+     "holds": true,
+     "iterations": 303,
+     "converged": true,
+     "pAtNodeIndexEqualToId": 0.0003185233799740672,
+     "nodeIndexEqualToIdIs": "user 2"
+    },
+    {
+     "user": 98,
+     "node": 97,
+     "pSeed": 0.05058971792459488,
+     "bound": 0.050000000000000044,
+     "margin": 0.0005897179245948347,
+     "holds": true,
+     "iterations": 299,
+     "converged": true,
+     "pAtNodeIndexEqualToId": 0.0005455285427160561,
+     "nodeIndexEqualToIdIs": "user 99"
+    },
+    {
+     "user": 943,
+     "node": 942,
+     "pSeed": 0.05183825269341469,
+     "bound": 0.050000000000000044,
+     "margin": 0.0018382526934146437,
+     "holds": true,
+     "iterations": 280,
+     "converged": true,
+     "pAtNodeIndexEqualToId": 0.0027701538056135178,
+     "nodeIndexEqualToIdIs": "movie 1"
+    }
+   ],
+   "itMinPositive": 272,
+   "userDegreeMedian": 31,
+   "stuck": [
+    {
+     "user": 178,
+     "degree": 152,
+     "residual": 1.7998563635046594e-06
+    },
+    {
+     "user": 161,
+     "degree": 10,
+     "residual": 1.7522888811072335e-06
+    },
+    {
+     "user": 760,
+     "degree": 14,
+     "residual": 1.7294878489337862e-06
+    },
+    {
+     "user": 847,
+     "degree": 41,
+     "residual": 1.5977839211700484e-06
+    },
+    {
+     "user": 54,
+     "degree": 33,
+     "residual": 1.4749957699677907e-06
+    },
+    {
+     "user": 846,
+     "degree": 236,
+     "residual": 1.3978487913846038e-06
+    },
+    {
+     "user": 903,
+     "degree": 71,
+     "residual": 1.360686837870162e-06
+    },
+    {
+     "user": 426,
+     "degree": 56,
+     "residual": 1.33158391690813e-06
+    },
+    {
+     "user": 189,
+     "degree": 105,
+     "residual": 1.3264780136523768e-06
+    },
+    {
+     "user": 710,
+     "degree": 43,
+     "residual": 1.3261214917292818e-06
+    },
+    {
+     "user": 386,
+     "degree": 10,
+     "residual": 1.3121389201842248e-06
+    },
+    {
+     "user": 310,
+     "degree": 11,
+     "residual": 1.2939290172653273e-06
+    },
+    {
+     "user": 295,
+     "degree": 144,
+     "residual": 1.2401401363604236e-06
+    },
+    {
+     "user": 348,
+     "degree": 34,
+     "residual": 1.218586476170458e-06
+    },
+    {
+     "user": 572,
+     "degree": 10,
+     "residual": 1.2170767149655148e-06
+    },
+    {
+     "user": 210,
+     "degree": 87,
+     "residual": 1.1998217814834788e-06
+    },
+    {
+     "user": 503,
+     "degree": 89,
+     "residual": 1.1982556316070259e-06
+    },
+    {
+     "user": 931,
+     "degree": 28,
+     "residual": 1.178496859211009e-06
+    },
+    {
+     "user": 130,
+     "degree": 215,
+     "residual": 1.1645870472420938e-06
+    },
+    {
+     "user": 351,
+     "degree": 26,
+     "residual": 1.153511675511254e-06
+    },
+    {
+     "user": 336,
+     "degree": 30,
+     "residual": 1.1450065358076245e-06
+    },
+    {
+     "user": 519,
+     "degree": 27,
+     "residual": 1.137982962973183e-06
+    },
+    {
+     "user": 840,
+     "degree": 122,
+     "residual": 1.135159436671529e-06
+    },
+    {
+     "user": 410,
+     "degree": 4,
+     "residual": 1.128811163653154e-06
+    },
+    {
+     "user": 148,
+     "degree": 38,
+     "residual": 1.1282495506748091e-06
+    },
+    {
+     "user": 475,
+     "degree": 9,
+     "residual": 1.0862677299883217e-06
+    },
+    {
+     "user": 566,
+     "degree": 79,
+     "residual": 1.0663970897439867e-06
+    },
+    {
+     "user": 202,
+     "degree": 6,
+     "residual": 1.0503645171411335e-06
+    },
+    {
+     "user": 769,
+     "degree": 9,
+     "residual": 1.0473013389855623e-06
+    },
+    {
+     "user": 501,
+     "degree": 40,
+     "residual": 1.0450912668602541e-06
+    },
+    {
+     "user": 362,
+     "degree": 13,
+     "residual": 1.037621586874593e-06
+    },
+    {
+     "user": 76,
+     "degree": 41,
+     "residual": 1.0365038178861141e-06
+    },
+    {
+     "user": 436,
+     "degree": 77,
+     "residual": 1.0330550139769912e-06
+    },
+    {
+     "user": 180,
+     "degree": 33,
+     "residual": 1.0329349606763572e-06
+    },
+    {
+     "user": 441,
+     "degree": 9,
+     "residual": 1.031349711411167e-06
+    },
+    {
+     "user": 812,
+     "degree": 10,
+     "residual": 1.029374743666267e-06
+    },
+    {
+     "user": 811,
+     "degree": 12,
+     "residual": 1.0289177225786261e-06
+    },
+    {
+     "user": 164,
+     "degree": 42,
+     "residual": 1.0210133041255176e-06
+    },
+    {
+     "user": 648,
+     "degree": 114,
+     "residual": 1.0206022125203162e-06
+    },
+    {
+     "user": 935,
+     "degree": 25,
+     "residual": 1.003179932013154e-06
+    }
+   ],
+   "zeroUser": [
+    {
+     "user": 685,
+     "iterations": 1,
+     "pSeed": 1
+    }
+   ],
+   "tensorsDelta": 0
+  }
+ ],
+ "single": [
+  {
+   "user": 1,
+   "alpha": 0.85,
+   "itBatched": 90,
+   "itSingle": 91,
+   "resBatched": 9.85584847512655e-07,
+   "resSingle": 9.071136446436867e-07,
+   "convBatched": true,
+   "convSingle": true,
+   "maxDelta": 4.6566128730773926e-09,
+   "singleMs": 160.5
+  },
+  {
+   "user": 98,
+   "alpha": 0.85,
+   "itBatched": 90,
+   "itSingle": 89,
+   "resBatched": 9.431084890820784e-07,
+   "resSingle": 9.967832284019096e-07,
+   "convBatched": true,
+   "convSingle": true,
+   "maxDelta": 4.423782229423523e-09,
+   "singleMs": 154.60000000009313
+  },
+  {
+   "user": 943,
+   "alpha": 0.85,
+   "itBatched": 91,
+   "itSingle": 90,
+   "resBatched": 8.618890205980279e-07,
+   "resSingle": 9.751383913680911e-07,
+   "convBatched": true,
+   "convSingle": true,
+   "maxDelta": 4.190951585769653e-09,
+   "singleMs": 157.5
+  },
+  {
+   "user": 1,
+   "alpha": 0.95,
+   "itBatched": 303,
+   "itSingle": 291,
+   "resBatched": 9.988534657168202e-07,
+   "resSingle": 9.801160558708943e-07,
+   "convBatched": true,
+   "convSingle": true,
+   "maxDelta": 1.862645149230957e-09,
+   "singleMs": 486.90000000037253
+  },
+  {
+   "user": 98,
+   "alpha": 0.95,
+   "itBatched": 299,
+   "itSingle": 291,
+   "resBatched": 9.87462954071816e-07,
+   "resSingle": 9.763180059962906e-07,
+   "convBatched": true,
+   "convSingle": true,
+   "maxDelta": 1.3969838619232178e-09,
+   "singleMs": 490.90000000037253
+  },
+  {
+   "user": 943,
+   "alpha": 0.95,
+   "itBatched": 280,
+   "itSingle": 279,
+   "resBatched": 9.935065463650972e-07,
+   "resSingle": 9.926388884196058e-07,
+   "convBatched": true,
+   "convSingle": true,
+   "maxDelta": 5.122274160385132e-09,
+   "singleMs": 469.70000000018626
+  }
+ ],
+ "leak": {
+  "before": 0,
+  "afterEach": [
+   0,
+   0
+  ],
+  "after": 0,
+  "cacheBefore": {
+   "entries": 4,
+   "megabytes": 38.583788,
+   "keys": [
+    "0.5|0.000001|500",
+    "0.7|0.000001|500",
+    "0.85|0.000001|500",
+    "0.95|0.000001|500"
+   ]
+  },
+  "cacheAfter": {
+   "entries": 4,
+   "megabytes": 38.583788,
+   "keys": [
+    "0.5|0.000001|500",
+    "0.7|0.000001|500",
+    "0.95|0.000001|500",
+    "0.85|0.000001|500"
+   ]
+  }
+ },
+ "errors": {
+  "console": [],
+  "exceptions": [],
+  "log": [
+   "error: Failed to load resource: the server responded with a status of 404 (File not found)"
+  ]
+ },
+ "wallSeconds": 14.1
+}
