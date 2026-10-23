@@ -1,0 +1,11 @@
+{'target': 'log', 'factors': 64, 'conf_a': 0.0, 'reg': 0.005, 'steps': 300, 'lr': 0.05, 'seed': 42, 'map5': 0.36647146401985115, 'final_loss': 0.006615675985813141, 'seconds': 7.99}
+{'target': 'log', 'factors': 64, 'conf_a': 1.0, 'reg': 0.005, 'steps': 300, 'lr': 0.05, 'seed': 42, 'map5': 0.3640570719602978, 'final_loss': 0.009420908987522125, 'seconds': 7.23}
+{'target': 'log', 'factors': 64, 'conf_a': 3.0, 'reg': 0.005, 'steps': 300, 'lr': 0.05, 'seed': 42, 'map5': 0.3600272952853598, 'final_loss': 0.012854913249611855, 'seconds': 7.79}
+{'target': 'log', 'factors': 64, 'conf_a': 0.0, 'reg': 0.01, 'steps': 300, 'lr': 0.05, 'seed': 42, 'map5': 0.3525641025641026, 'final_loss': 0.008144374005496502, 'seconds': 7.79}
+{'target': 'log', 'factors': 64, 'conf_a': 1.0, 'reg': 0.01, 'steps': 300, 'lr': 0.05, 'seed': 42, 'map5': 0.3709677419354839, 'final_loss': 0.012766544707119465, 'seconds': 7.45}
+{'target': 'log', 'factors': 64, 'conf_a': 3.0, 'reg': 0.01, 'steps': 300, 'lr': 0.05, 'seed': 42, 'map5': 0.36542018196856907, 'final_loss': 0.017465371638536453, 'seconds': 7.33}
+{'target': 'log', 'factors': 64, 'conf_a': 0.0, 'reg': 0.02, 'steps': 300, 'lr': 0.05, 'seed': 42, 'map5': 0.3184665012406948, 'final_loss': 0.009357553906738758, 'seconds': 7.43}
+{'target': 'log', 'factors': 64, 'conf_a': 1.0, 'reg': 0.02, 'steps': 300, 'lr': 0.05, 'seed': 42, 'map5': 0.3610835401157982, 'final_loss': 0.016438549384474754, 'seconds': 7.37}
+{'target': 'log', 'factors': 64, 'conf_a': 3.0, 'reg': 0.02, 'steps': 300, 'lr': 0.05, 'seed': 42, 'map5': 0.3713746898263027, 'final_loss': 0.023778744041919708, 'seconds': 7.35}
+BEST {'target': 'log', 'factors': 64, 'conf_a': 3.0, 'reg': 0.02, 'steps': 300, 'lr': 0.05, 'seed': 42, 'map5': 0.3713746898263027, 'final_loss': 0.023778744041919708, 'seconds': 7.35} total 67.8s
+.venv/bin/python -u tune.py mf2 64  581,20s user 17,81s system 826% cpu 1:12,44 total

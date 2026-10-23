@@ -1,0 +1,4 @@
+labelled airings weeks 11-42: 381,892 (dropped 0 cross-file duplicates); weeks 10..43
+raw view x airing overlaps: 3,847,696  (0.9s)
+user x airing pairs: 3,014,129; screen>=0.8: 615,979; screen>1.0 (overlapping view intervals): 24,006  (1.5s)
+screen quantiles 10/25/50/75/90: [0.015 0.044 0.195 0.659 1.   ]

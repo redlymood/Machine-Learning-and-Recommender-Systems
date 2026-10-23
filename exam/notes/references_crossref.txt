@@ -1,0 +1,44 @@
+DOI 10.1109/icdm.2008.22
+  title: Collaborative Filtering for Implicit Feedback Datasets
+  authors: Yifan Hu, Yehuda Koren, Chris Volinsky
+  venue: 2008 Eighth IEEE International Conference on Data Mining | vol None issue None pages 263-272
+  year: [2008, 12]
+DOI 10.1016/s0169-7552(98)00110-x
+  title: The anatomy of a large-scale hypertextual Web search engine
+  authors: Sergey Brin, Lawrence Page
+  venue: Computer Networks and ISDN Systems | vol 30 issue 1-7 pages 107-117
+  year: [1998, 4]
+DOI 10.1145/511446.511513
+  title: Topic-sensitive PageRank
+  authors: Taher H. Haveliwala
+  venue: Proceedings of the 11th international conference on World Wide Web | vol None issue None pages 517-526
+  year: [2002, 5, 7]
+DOI 10.1145/2567948.2579244
+  title: Random walks in recommender systems
+  authors: Colin Cooper, Sang Hyuk Lee, Tomasz Radzik, Yiannis Siantos
+  venue: Proceedings of the 23rd International Conference on World Wide Web | vol None issue None pages 811-816
+  year: [2014, 4, 7]
+DOI 10.1023/a:1021240730564
+  title: Hybrid Recommender Systems: Survey and Experiments
+  authors: Robin Burke
+  venue: User Modeling and User-Adapted Interaction | vol 12 issue 4 pages 331-370
+  year: [2002, 11]
+DOI 10.1145/1571941.1572114
+  title: Reciprocal rank fusion outperforms condorcet and individual rank learning methods
+  authors: Gordon V. Cormack, Charles L A Clarke, Stefan Buettcher
+  venue: Proceedings of the 32nd international ACM SIGIR conference on Research and development in information retrieval | vol None issue None pages 758-759
+  year: [2009, 7, 19]
+arXiv http://arxiv.org/abs/1603.04467v2
+  title: TensorFlow: Large-Scale Machine Learning on Heterogeneous Distributed Systems
+  authors: Martín Abadi, Ashish Agarwal, Paul Barham ... (40 authors)
+  published: 2016-03-14T20:50:20Z
+arXiv http://arxiv.org/abs/1412.6980v9
+  title: Adam: A Method for Stochastic Optimization
+  authors: Diederik P. Kingma, Jimmy Ba
+  published: 2014-12-22T13:54:29Z
+200 https://www.kaggle.com/competitions/sweettv-tv-program-recommender
+200 https://www.kaggle.com/competitions/sweettv-tv-program-recommender/data
+404 https://www.tensorflow.org/versions/r2.21/api_docs/python/tf
+200 https://www.tensorflow.org/api_docs/python/tf/keras/optimizers/Adam
+200 https://arxiv.org/abs/1412.6980
+200 https://arxiv.org/abs/1603.04467

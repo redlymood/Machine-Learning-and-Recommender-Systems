@@ -1,0 +1,18 @@
+{
+ "split": "history 11-20 -> target 21-30",
+ "n_eval_users": 4030,
+ "rows": [
+  {
+   "method": "popularity",
+   "map5": 0.27927295285359804
+  },
+  {
+   "method": "personal_frequency",
+   "map5": 0.3469545078577337
+  }
+ ],
+ "best": {
+  "method": "personal_frequency",
+  "map5": 0.3469545078577337
+ }
+}

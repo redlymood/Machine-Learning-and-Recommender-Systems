@@ -1,0 +1,40 @@
+{
+ "truth_items": 20150,
+ "truth_items_in_history_share": 0.5625806451612904,
+ "oracle_history_only_map5": 0.5625806451612902,
+ "popularity": {
+  "map5": 0.27927295285359804,
+  "hits_on_history_items": 6117,
+  "hits_on_new_items": 1085,
+  "share_of_recs_from_history": 0.5734491315136476,
+  "precision@5": 0.3574193548387097
+ },
+ "ppr": {
+  "map5": 0.36640942928039705,
+  "hits_on_history_items": 8352,
+  "hits_on_new_items": 291,
+  "share_of_recs_from_history": 0.9394044665012407,
+  "precision@5": 0.4289330024813896
+ },
+ "mf": {
+  "map5": 0.3713746898263027,
+  "hits_on_history_items": 8048,
+  "hits_on_new_items": 687,
+  "share_of_recs_from_history": 0.8247146401985112,
+  "precision@5": 0.4334987593052109
+ },
+ "hybrid": {
+  "map5": 0.3732522746071133,
+  "hits_on_history_items": 8155,
+  "hits_on_new_items": 629,
+  "share_of_recs_from_history": 0.8466004962779157,
+  "precision@5": 0.4359305210918114
+ },
+ "final": {
+  "map5": 0.390258064516129,
+  "hits_on_history_items": 8386,
+  "hits_on_new_items": 724,
+  "share_of_recs_from_history": 0.8276426799007445,
+  "precision@5": 0.4521091811414392
+ }
+}

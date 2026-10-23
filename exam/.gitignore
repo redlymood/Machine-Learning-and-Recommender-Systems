@@ -1,0 +1,6 @@
+.venv/
+data/
+cache/
+__pycache__/
+results/test_scores.npz
+notes/competition_pages.json

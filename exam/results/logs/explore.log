@@ -1,0 +1,21 @@
+views start range 2020-03-09 00:00:02 -> 2020-07-26 23:58:42
+views stop  range 2020-03-09 00:01:26 -> 2020-07-26 23:59:58
+schedule 11-20 2020-03-08 23:00:00 -> 2020-05-18 12:00:00
+schedule 21-30 2020-05-18 00:00:00 -> 2020-07-27 12:00:00
+schedule 31-42 2020-07-27 00:00:00 -> 2020-10-19 12:00:00
+test users 1260, unique 1260, in view log 1260
+channels: views 202, schedule 11-20 400, views-channels missing from schedule 9
+channels: views 202, schedule 21-30 403, views-channels missing from schedule 6
+channels: views 202, schedule 31-42 404, views-channels missing from schedule 6
+duraton == stop-start: 0.9999799037682495
+view length quantiles (s): [   80   133   396  1452  3911 14079] max 342145
+schedule 11-20: overlapping consecutive airings 2, gaps>0 396, exact back-to-back 1,073,437, duplicate (channel,start) 1
+schedule 21-30: overlapping consecutive airings 2, gaps>0 3, exact back-to-back 1,073,986, duplicate (channel,start) 0
+schedule 31-42: overlapping consecutive airings 8, gaps>0 4, exact back-to-back 1,294,962, duplicate (channel,start) 0
+shift -3h: view stops within 60 s of an airing boundary: 0.0363 of 3,837,329
+shift -2h: view stops within 60 s of an airing boundary: 0.0357 of 3,837,329
+shift -1h: view stops within 60 s of an airing boundary: 0.0353 of 3,837,329
+shift +0h: view stops within 60 s of an airing boundary: 0.0486 of 3,837,329
+shift +1h: view stops within 60 s of an airing boundary: 0.0337 of 3,837,329
+shift +2h: view stops within 60 s of an airing boundary: 0.0335 of 3,837,329
+shift +3h: view stops within 60 s of an airing boundary: 0.0334 of 3,837,329

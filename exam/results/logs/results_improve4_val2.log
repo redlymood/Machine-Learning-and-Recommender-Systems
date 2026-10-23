@@ -1,0 +1,18 @@
+{'split': 'val2', 'n_users': 3758, 'popularity': 0.23581781089231862, 'ppr': 0.3469088167464964, 'mf': 0.35286411211637403, 'hybrid': 0.3549405712258294}
+{'split': 'val2', 'ratio': 'global', 'beta': 0.2, 'map5': 0.3570179173319142}
+{'split': 'val2', 'ratio': 'global', 'beta': 0.3, 'map5': 0.35718555969487314}
+{'split': 'val2', 'ratio': 'global', 'beta': 0.4, 'map5': 0.35579120099343625}
+{'split': 'val2', 'ratio': 'global', 'beta': 0.5, 'map5': 0.3511921234699308}
+{'split': 'val2', 'ratio': 'user_channels', 'beta': 0.2, 'map5': 0.36104399503281887}
+{'split': 'val2', 'ratio': 'user_channels', 'beta': 0.3, 'map5': 0.36105109100585414}
+{'split': 'val2', 'ratio': 'user_channels', 'beta': 0.4, 'map5': 0.36035213766187685}
+{'split': 'val2', 'ratio': 'user_channels', 'beta': 0.5, 'map5': 0.3575004434983147}
+{'split': 'val2', 'ratio': 'slot_binary', 'beta': 0.2, 'map5': 0.36194163562178466}
+{'split': 'val2', 'ratio': 'slot_binary', 'beta': 0.3, 'map5': 0.36046212524392407}
+{'split': 'val2', 'ratio': 'slot_binary', 'beta': 0.4, 'map5': 0.356774880255455}
+{'split': 'val2', 'ratio': 'slot_binary', 'beta': 0.5, 'map5': 0.34725918041511444}
+{'split': 'val2', 'ratio': 'slot_time', 'beta': 0.2, 'map5': 0.36204452723079655}
+{'split': 'val2', 'ratio': 'slot_time', 'beta': 0.3, 'map5': 0.3568094731240021}
+{'split': 'val2', 'ratio': 'slot_time', 'beta': 0.4, 'map5': 0.33820383182543906}
+{'split': 'val2', 'ratio': 'slot_time', 'beta': 0.5, 'map5': 0.2907051623203832}
+.venv/bin/python -u improve4.py val2  145,28s user 3,96s system 627% cpu 23,776 total

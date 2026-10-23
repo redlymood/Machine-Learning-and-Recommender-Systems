@@ -1,0 +1,13 @@
+{'split': 'val', 'idea': 'mf_lam', 'lam': 0.0, 'map5': 0.390258064516129}
+{'split': 'val', 'idea': 'mf_lam', 'lam': 0.05, 'map5': 0.3883548387096774}
+{'split': 'val', 'idea': 'mf_lam', 'lam': 0.1, 'map5': 0.38761952026468155}
+{'split': 'val', 'idea': 'recent4_component', 'w3': 0.1, 'map5': 0.3907923904052937}
+{'split': 'val', 'idea': 'recent4_component', 'w3': 0.2, 'map5': 0.38816790736145573}
+{'split': 'val', 'idea': 'recent4_component', 'w3': 0.3, 'map5': 0.38226137303556657}
+{'split': 'val2', 'idea': 'mf_lam', 'lam': 0.0, 'map5': 0.36105109100585414}
+{'split': 'val2', 'idea': 'mf_lam', 'lam': 0.05, 'map5': 0.3604825261664006}
+{'split': 'val2', 'idea': 'mf_lam', 'lam': 0.1, 'map5': 0.35862160723789244}
+{'split': 'val2', 'idea': 'recent4_component', 'w3': 0.1, 'map5': 0.36304417243214476}
+{'split': 'val2', 'idea': 'recent4_component', 'w3': 0.2, 'map5': 0.36269735675004433}
+{'split': 'val2', 'idea': 'recent4_component', 'w3': 0.3, 'map5': 0.3603370587191768}
+.venv/bin/python -u improve5.py  557,84s user 15,18s system 811% cpu 1:10,63 total

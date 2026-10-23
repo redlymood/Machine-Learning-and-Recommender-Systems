@@ -1,0 +1,585 @@
+{
+ "rule": "(fixed before looking at any list): among evaluable validation users who are also Kaggle\ntest users, 'heavy' = closest to the 90th percentile of qualifying airings in the history window,\n'light' = closest to the 10th percentile; ties -> smaller user index.",
+ "users": {
+  "heavy": {
+   "user_idx": 2189,
+   "user_id": "8377619604347126107",
+   "history_qualifying_airings": 179.0,
+   "history_distinct_shows": 22,
+   "history_top": [
+    {
+     "id": 2400480,
+     "title": "ТСН.",
+     "category": "Инфо",
+     "n": 59.0
+    },
+    {
+     "id": 240081,
+     "title": "Факты.",
+     "category": "Инфо",
+     "n": 22.0
+    },
+    {
+     "id": 12002955,
+     "title": "М/с 'Свинка Пеппа'.",
+     "category": "Детям",
+     "n": 19.0
+    },
+    {
+     "id": 200338,
+     "title": "Готовим вместе.",
+     "category": "Познавательное",
+     "n": 12.0
+    },
+    {
+     "id": 20088,
+     "title": "'Завтрак с 1+1'. Информационно-развлекательная программа.",
+     "category": "Развлечения",
+     "n": 10.0
+    },
+    {
+     "id": 2400508,
+     "title": "Сегодня.",
+     "category": "Инфо",
+     "n": 10.0
+    },
+    {
+     "id": 200344,
+     "title": "'Чистоnews'.",
+     "category": "Развлечения",
+     "n": 9.0
+    },
+    {
+     "id": 12002896,
+     "title": "М/с 'Вспыш и чудо-машинки', 2 сезон, 14 с. 'Унесённый лыжами'.",
+     "category": "Детям",
+     "n": 9.0
+    }
+   ],
+   "actual_top5_weeks21_30": [
+    {
+     "id": 2400480,
+     "title": "ТСН.",
+     "category": "Инфо",
+     "n": 26
+    },
+    {
+     "id": 2400508,
+     "title": "Сегодня.",
+     "category": "Инфо",
+     "n": 24
+    },
+    {
+     "id": 240081,
+     "title": "Факты.",
+     "category": "Инфо",
+     "n": 13
+    },
+    {
+     "id": 20088,
+     "title": "'Завтрак с 1+1'. Информационно-развлекательная программа.",
+     "category": "Развлечения",
+     "n": 7
+    },
+    {
+     "id": 12002955,
+     "title": "М/с 'Свинка Пеппа'.",
+     "category": "Детям",
+     "n": 7
+    }
+   ],
+   "recommendations": {
+    "popularity": {
+     "top5": [
+      {
+       "id": 2400480,
+       "title": "ТСН.",
+       "category": "Инфо",
+       "hit": true,
+       "in_history": true
+      },
+      {
+       "id": 240081,
+       "title": "Факты.",
+       "category": "Инфо",
+       "hit": true,
+       "in_history": true
+      },
+      {
+       "id": 12001682,
+       "title": "М/с 'Губка Боб Квадратные Штаны'.",
+       "category": "Детям",
+       "hit": false,
+       "in_history": true
+      },
+      {
+       "id": 20088,
+       "title": "'Завтрак с 1+1'. Информационно-развлекательная программа.",
+       "category": "Развлечения",
+       "hit": true,
+       "in_history": true
+      },
+      {
+       "id": 2400508,
+       "title": "Сегодня.",
+       "category": "Инфо",
+       "hit": true,
+       "in_history": true
+      }
+     ],
+     "ap5": 0.71
+    },
+    "ppr": {
+     "top5": [
+      {
+       "id": 2400480,
+       "title": "ТСН.",
+       "category": "Инфо",
+       "hit": true,
+       "in_history": true
+      },
+      {
+       "id": 240081,
+       "title": "Факты.",
+       "category": "Инфо",
+       "hit": true,
+       "in_history": true
+      },
+      {
+       "id": 12002955,
+       "title": "М/с 'Свинка Пеппа'.",
+       "category": "Детям",
+       "hit": true,
+       "in_history": true
+      },
+      {
+       "id": 20088,
+       "title": "'Завтрак с 1+1'. Информационно-развлекательная программа.",
+       "category": "Развлечения",
+       "hit": true,
+       "in_history": true
+      },
+      {
+       "id": 2400508,
+       "title": "Сегодня.",
+       "category": "Инфо",
+       "hit": true,
+       "in_history": true
+      }
+     ],
+     "ap5": 1.0
+    },
+    "mf": {
+     "top5": [
+      {
+       "id": 2400480,
+       "title": "ТСН.",
+       "category": "Инфо",
+       "hit": true,
+       "in_history": true
+      },
+      {
+       "id": 240081,
+       "title": "Факты.",
+       "category": "Инфо",
+       "hit": true,
+       "in_history": true
+      },
+      {
+       "id": 12002955,
+       "title": "М/с 'Свинка Пеппа'.",
+       "category": "Детям",
+       "hit": true,
+       "in_history": true
+      },
+      {
+       "id": 20088,
+       "title": "'Завтрак с 1+1'. Информационно-развлекательная программа.",
+       "category": "Развлечения",
+       "hit": true,
+       "in_history": true
+      },
+      {
+       "id": 200344,
+       "title": "'Чистоnews'.",
+       "category": "Развлечения",
+       "hit": false,
+       "in_history": true
+      }
+     ],
+     "ap5": 0.8
+    },
+    "hybrid": {
+     "top5": [
+      {
+       "id": 2400480,
+       "title": "ТСН.",
+       "category": "Инфо",
+       "hit": true,
+       "in_history": true
+      },
+      {
+       "id": 240081,
+       "title": "Факты.",
+       "category": "Инфо",
+       "hit": true,
+       "in_history": true
+      },
+      {
+       "id": 12002955,
+       "title": "М/с 'Свинка Пеппа'.",
+       "category": "Детям",
+       "hit": true,
+       "in_history": true
+      },
+      {
+       "id": 20088,
+       "title": "'Завтрак с 1+1'. Информационно-развлекательная программа.",
+       "category": "Развлечения",
+       "hit": true,
+       "in_history": true
+      },
+      {
+       "id": 2400508,
+       "title": "Сегодня.",
+       "category": "Инфо",
+       "hit": true,
+       "in_history": true
+      }
+     ],
+     "ap5": 1.0
+    },
+    "final": {
+     "top5": [
+      {
+       "id": 2400480,
+       "title": "ТСН.",
+       "category": "Инфо",
+       "hit": true,
+       "in_history": true
+      },
+      {
+       "id": 240081,
+       "title": "Факты.",
+       "category": "Инфо",
+       "hit": true,
+       "in_history": true
+      },
+      {
+       "id": 12002955,
+       "title": "М/с 'Свинка Пеппа'.",
+       "category": "Детям",
+       "hit": true,
+       "in_history": true
+      },
+      {
+       "id": 20088,
+       "title": "'Завтрак с 1+1'. Информационно-развлекательная программа.",
+       "category": "Развлечения",
+       "hit": true,
+       "in_history": true
+      },
+      {
+       "id": 2400508,
+       "title": "Сегодня.",
+       "category": "Инфо",
+       "hit": true,
+       "in_history": true
+      }
+     ],
+     "ap5": 1.0
+    }
+   }
+  },
+  "light": {
+   "user_idx": 298,
+   "user_id": "1209347957397401932",
+   "history_qualifying_airings": 18.0,
+   "history_distinct_shows": 15,
+   "history_top": [
+    {
+     "id": 200337,
+     "title": "Утро с Интером.",
+     "category": "Развлечения",
+     "n": 2.0
+    },
+    {
+     "id": 400357,
+     "title": "'Холостяк', 10 сезон, 10 эп., 1 ч.",
+     "category": "Развлечения",
+     "n": 2.0
+    },
+    {
+     "id": 2400467,
+     "title": "'Викна-Новости'.",
+     "category": "Инфо",
+     "n": 2.0
+    },
+    {
+     "id": 2400480,
+     "title": "ТСН.",
+     "category": "Инфо",
+     "n": 1.0
+    },
+    {
+     "id": 2500261,
+     "title": "Подробности недели.",
+     "category": "Инфо",
+     "n": 1.0
+    },
+    {
+     "id": 5900347,
+     "title": "'Деньги'.",
+     "category": "Инфо",
+     "n": 1.0
+    },
+    {
+     "id": 6200371,
+     "title": "ДжеДАИ.",
+     "category": "Познавательное",
+     "n": 1.0
+    },
+    {
+     "id": 10002514,
+     "title": "Т/с 'Кухня'.",
+     "category": "Сериалы",
+     "n": 1.0
+    }
+   ],
+   "actual_top5_weeks21_30": [
+    {
+     "id": 2400508,
+     "title": "Сегодня.",
+     "category": "Инфо",
+     "n": 5
+    },
+    {
+     "id": 500315,
+     "title": "Ток-шоу 'Касается каждого'.",
+     "category": "Развлечения",
+     "n": 3
+    },
+    {
+     "id": 200352,
+     "title": "'Вечерний квартал'.",
+     "category": "Развлечения",
+     "n": 2
+    },
+    {
+     "id": 500281,
+     "title": "Ток-шоу 'Говорит Украина'.",
+     "category": "Развлечения",
+     "n": 2
+    },
+    {
+     "id": 1100411,
+     "title": "'Вещдок'.",
+     "category": "Познавательное",
+     "n": 2
+    }
+   ],
+   "recommendations": {
+    "popularity": {
+     "top5": [
+      {
+       "id": 2400480,
+       "title": "ТСН.",
+       "category": "Инфо",
+       "hit": false,
+       "in_history": true
+      },
+      {
+       "id": 240081,
+       "title": "Факты.",
+       "category": "Инфо",
+       "hit": false,
+       "in_history": false
+      },
+      {
+       "id": 12001682,
+       "title": "М/с 'Губка Боб Квадратные Штаны'.",
+       "category": "Детям",
+       "hit": false,
+       "in_history": false
+      },
+      {
+       "id": 20088,
+       "title": "'Завтрак с 1+1'. Информационно-развлекательная программа.",
+       "category": "Развлечения",
+       "hit": false,
+       "in_history": false
+      },
+      {
+       "id": 2400508,
+       "title": "Сегодня.",
+       "category": "Инфо",
+       "hit": true,
+       "in_history": false
+      }
+     ],
+     "ap5": 0.04
+    },
+    "ppr": {
+     "top5": [
+      {
+       "id": 2400480,
+       "title": "ТСН.",
+       "category": "Инфо",
+       "hit": false,
+       "in_history": true
+      },
+      {
+       "id": 2400467,
+       "title": "'Викна-Новости'.",
+       "category": "Инфо",
+       "hit": false,
+       "in_history": true
+      },
+      {
+       "id": 400357,
+       "title": "'Холостяк', 10 сезон, 10 эп., 1 ч.",
+       "category": "Развлечения",
+       "hit": false,
+       "in_history": true
+      },
+      {
+       "id": 200337,
+       "title": "Утро с Интером.",
+       "category": "Развлечения",
+       "hit": false,
+       "in_history": true
+      },
+      {
+       "id": 10002514,
+       "title": "Т/с 'Кухня'.",
+       "category": "Сериалы",
+       "hit": false,
+       "in_history": true
+      }
+     ],
+     "ap5": 0.0
+    },
+    "mf": {
+     "top5": [
+      {
+       "id": 2400480,
+       "title": "ТСН.",
+       "category": "Инфо",
+       "hit": false,
+       "in_history": true
+      },
+      {
+       "id": 2400467,
+       "title": "'Викна-Новости'.",
+       "category": "Инфо",
+       "hit": false,
+       "in_history": true
+      },
+      {
+       "id": 240081,
+       "title": "Факты.",
+       "category": "Инфо",
+       "hit": false,
+       "in_history": false
+      },
+      {
+       "id": 200337,
+       "title": "Утро с Интером.",
+       "category": "Развлечения",
+       "hit": false,
+       "in_history": true
+      },
+      {
+       "id": 2400508,
+       "title": "Сегодня.",
+       "category": "Инфо",
+       "hit": true,
+       "in_history": false
+      }
+     ],
+     "ap5": 0.04
+    },
+    "hybrid": {
+     "top5": [
+      {
+       "id": 2400480,
+       "title": "ТСН.",
+       "category": "Инфо",
+       "hit": false,
+       "in_history": true
+      },
+      {
+       "id": 2400467,
+       "title": "'Викна-Новости'.",
+       "category": "Инфо",
+       "hit": false,
+       "in_history": true
+      },
+      {
+       "id": 240081,
+       "title": "Факты.",
+       "category": "Инфо",
+       "hit": false,
+       "in_history": false
+      },
+      {
+       "id": 200337,
+       "title": "Утро с Интером.",
+       "category": "Развлечения",
+       "hit": false,
+       "in_history": true
+      },
+      {
+       "id": 400357,
+       "title": "'Холостяк', 10 сезон, 10 эп., 1 ч.",
+       "category": "Развлечения",
+       "hit": false,
+       "in_history": true
+      }
+     ],
+     "ap5": 0.0
+    },
+    "final": {
+     "top5": [
+      {
+       "id": 2400467,
+       "title": "'Викна-Новости'.",
+       "category": "Инфо",
+       "hit": false,
+       "in_history": true
+      },
+      {
+       "id": 2400480,
+       "title": "ТСН.",
+       "category": "Инфо",
+       "hit": false,
+       "in_history": true
+      },
+      {
+       "id": 240081,
+       "title": "Факты.",
+       "category": "Инфо",
+       "hit": false,
+       "in_history": false
+      },
+      {
+       "id": 200337,
+       "title": "Утро с Интером.",
+       "category": "Развлечения",
+       "hit": false,
+       "in_history": true
+      },
+      {
+       "id": 2400508,
+       "title": "Сегодня.",
+       "category": "Инфо",
+       "hit": true,
+       "in_history": false
+      }
+     ],
+     "ap5": 0.04
+    }
+   }
+  }
+ }
+}

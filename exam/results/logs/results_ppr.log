@@ -1,0 +1,32 @@
+BEST {'method': 'personal_frequency', 'map5': 0.3469545078577337} total 0.2s
+.venv/bin/python -u tune.py baselines  3,36s user 0,62s system 92% cpu 4,312 total
+{'alpha': 0.05, 'transform': 'raw', 'lam': 0.0, 'map5': 0.35485359801488836, 'seconds': 2.13, 'iterations': 5, 'max_l1_delta': 7.29445162050979e-08}
+{'alpha': 0.05, 'transform': 'log', 'lam': 0.0, 'map5': 0.3547386269644334, 'seconds': 2.05, 'iterations': 5, 'max_l1_delta': 6.465486990236968e-08}
+{'alpha': 0.1, 'transform': 'raw', 'lam': 0.0, 'map5': 0.3553573200992556, 'seconds': 2.49, 'iterations': 6, 'max_l1_delta': 1.4073199849917728e-07}
+{'alpha': 0.1, 'transform': 'log', 'lam': 0.0, 'map5': 0.35560545905707197, 'seconds': 2.68, 'iterations': 6, 'max_l1_delta': 1.4427371297642821e-07}
+{'alpha': 0.2, 'transform': 'raw', 'lam': 0.0, 'map5': 0.3585889164598842, 'seconds': 3.55, 'iterations': 8, 'max_l1_delta': 2.4197106540668756e-07}
+{'alpha': 0.2, 'transform': 'log', 'lam': 0.0, 'map5': 0.3584747725392886, 'seconds': 3.64, 'iterations': 8, 'max_l1_delta': 2.4370578444177227e-07}
+{'alpha': 0.3, 'transform': 'raw', 'lam': 0.0, 'map5': 0.3616410256410257, 'seconds': 4.38, 'iterations': 10, 'max_l1_delta': 2.8066463642062445e-07}
+{'alpha': 0.3, 'transform': 'log', 'lam': 0.0, 'map5': 0.36058312655086844, 'seconds': 4.41, 'iterations': 10, 'max_l1_delta': 2.8419174213922815e-07}
+{'alpha': 0.4, 'transform': 'raw', 'lam': 0.0, 'map5': 0.3653771712158809, 'seconds': 4.97, 'iterations': 12, 'max_l1_delta': 4.41298993791861e-07}
+{'alpha': 0.4, 'transform': 'log', 'lam': 0.0, 'map5': 0.3620090984284533, 'seconds': 5.27, 'iterations': 12, 'max_l1_delta': 4.801153181688278e-07}
+{'alpha': 0.5, 'transform': 'raw', 'lam': 0.0, 'map5': 0.36618031430934656, 'seconds': 5.96, 'iterations': 14, 'max_l1_delta': 9.135231380241748e-07}
+{'alpha': 0.5, 'transform': 'log', 'lam': 0.0, 'map5': 0.3606832092638544, 'seconds': 6.07, 'iterations': 14, 'max_l1_delta': 9.667161293691606e-07}
+{'alpha': 0.7, 'transform': 'raw', 'lam': 0.0, 'map5': 0.3486757650951199, 'seconds': 9.93, 'iterations': 22, 'max_l1_delta': 6.804523309256183e-07}
+{'alpha': 0.7, 'transform': 'log', 'lam': 0.0, 'map5': 0.347368899917287, 'seconds': 9.86, 'iterations': 22, 'max_l1_delta': 7.017567895672983e-07}
+{'alpha': 0.85, 'transform': 'raw', 'lam': 0.0, 'map5': 0.32025806451612904, 'seconds': 14.42, 'iterations': 31, 'max_l1_delta': 9.117401305047679e-07}
+{'alpha': 0.85, 'transform': 'log', 'lam': 0.0, 'map5': 0.3230306038047973, 'seconds': 14.67, 'iterations': 32, 'max_l1_delta': 6.852365004306193e-07}
+{'alpha': 0.2, 'transform': 'raw', 'lam': 0.05, 'map5': 0.3560124069478908, 'seconds': 3.27, 'iterations': 8, 'max_l1_delta': 2.0089390773136984e-07}
+{'alpha': 0.2, 'transform': 'raw', 'lam': 0.1, 'map5': 0.3544838709677419, 'seconds': 3.23, 'iterations': 8, 'max_l1_delta': 1.9505674231368175e-07}
+{'alpha': 0.2, 'transform': 'log', 'lam': 0.05, 'map5': 0.35478329197684033, 'seconds': 3.41, 'iterations': 8, 'max_l1_delta': 1.732110490593186e-07}
+{'alpha': 0.2, 'transform': 'log', 'lam': 0.1, 'map5': 0.35351447477253933, 'seconds': 3.17, 'iterations': 8, 'max_l1_delta': 1.6327608420851902e-07}
+{'alpha': 0.3, 'transform': 'raw', 'lam': 0.05, 'map5': 0.3614160463192721, 'seconds': 4.1, 'iterations': 10, 'max_l1_delta': 1.9912427262624988e-07}
+{'alpha': 0.3, 'transform': 'raw', 'lam': 0.1, 'map5': 0.35997105045492145, 'seconds': 3.75, 'iterations': 9, 'max_l1_delta': 9.102975582209183e-07}
+{'alpha': 0.3, 'transform': 'log', 'lam': 0.05, 'map5': 0.35894292803970224, 'seconds': 4.45, 'iterations': 10, 'max_l1_delta': 2.3510551727667917e-07}
+{'alpha': 0.3, 'transform': 'log', 'lam': 0.1, 'map5': 0.35751530190239866, 'seconds': 4.25, 'iterations': 9, 'max_l1_delta': 9.656657766754506e-07}
+{'alpha': 0.4, 'transform': 'raw', 'lam': 0.05, 'map5': 0.36640942928039705, 'seconds': 5.39, 'iterations': 12, 'max_l1_delta': 3.60321450898482e-07}
+{'alpha': 0.4, 'transform': 'raw', 'lam': 0.1, 'map5': 0.36578081058726225, 'seconds': 5.63, 'iterations': 12, 'max_l1_delta': 2.6307458256269456e-07}
+{'alpha': 0.4, 'transform': 'log', 'lam': 0.05, 'map5': 0.3619454094292804, 'seconds': 5.7, 'iterations': 12, 'max_l1_delta': 4.0151587654690957e-07}
+{'alpha': 0.4, 'transform': 'log', 'lam': 0.1, 'map5': 0.360848635235732, 'seconds': 5.65, 'iterations': 12, 'max_l1_delta': 3.075650738537661e-07}
+BEST {'alpha': 0.4, 'transform': 'raw', 'lam': 0.05, 'map5': 0.36640942928039705, 'seconds': 5.39, 'iterations': 12, 'max_l1_delta': 3.60321450898482e-07} total 148.6s
+.venv/bin/python -u tune.py ppr  1420,77s user 15,59s system 943% cpu 2:32,32 total

@@ -1,0 +1,19 @@
+lam=0.0  beta=0.0 MAP@5=0.35401
+lam=0.0  beta=0.5 MAP@5=0.34687
+lam=0.0  beta=1.0 MAP@5=0.32821
+lam=0.05 beta=0.0 MAP@5=0.34229
+lam=0.05 beta=0.5 MAP@5=0.34706
+lam=0.05 beta=1.0 MAP@5=0.32936
+lam=0.1  beta=0.0 MAP@5=0.34195
+lam=0.1  beta=0.5 MAP@5=0.34607
+lam=0.1  beta=1.0 MAP@5=0.32916
+lam=0.2  beta=0.0 MAP@5=0.33468
+lam=0.2  beta=0.5 MAP@5=0.33938
+lam=0.2  beta=1.0 MAP@5=0.32444
+lam=0.3  beta=0.0 MAP@5=0.32362
+lam=0.3  beta=0.5 MAP@5=0.32730
+lam=0.3  beta=1.0 MAP@5=0.31455
+lam=0.5  beta=0.0 MAP@5=0.30333
+lam=0.5  beta=0.5 MAP@5=0.30791
+lam=0.5  beta=1.0 MAP@5=0.29600
+best lam=0.0 beta=0.0 MAP@5=0.35401  (2.1s)

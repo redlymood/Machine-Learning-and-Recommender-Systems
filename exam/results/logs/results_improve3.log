@@ -1,0 +1,22 @@
+{'ratio': 'global', 'w_mf': 0.5, 'beta': 0.3, 'map5': 0.3837444168734492}
+{'ratio': 'global', 'w_mf': 0.5, 'beta': 0.4, 'map5': 0.384763440860215}
+{'ratio': 'global', 'w_mf': 0.5, 'beta': 0.5, 'map5': 0.3850901571546733}
+{'ratio': 'global', 'w_mf': 0.6, 'beta': 0.3, 'map5': 0.38558974358974357}
+{'ratio': 'global', 'w_mf': 0.6, 'beta': 0.4, 'map5': 0.3864358974358974}
+{'ratio': 'global', 'w_mf': 0.6, 'beta': 0.5, 'map5': 0.3869867659222498}
+{'ratio': 'global', 'w_mf': 0.7, 'beta': 0.3, 'map5': 0.38628122415219185}
+{'ratio': 'global', 'w_mf': 0.7, 'beta': 0.4, 'map5': 0.3873548387096774}
+{'ratio': 'global', 'w_mf': 0.7, 'beta': 0.5, 'map5': 0.38725806451612904}
+{'ratio': 'global', 'w_mf': 0.8, 'beta': 0.3, 'map5': 0.3862258064516129}
+{'ratio': 'global', 'w_mf': 0.8, 'beta': 0.4, 'map5': 0.38675599669148053}
+{'ratio': 'global', 'w_mf': 0.8, 'beta': 0.5, 'map5': 0.3862191894127378}
+{'ratio': 'global', 'w_mf': 0.9, 'beta': 0.3, 'map5': 0.38570967741935486}
+{'ratio': 'global', 'w_mf': 0.9, 'beta': 0.4, 'map5': 0.3858569065343258}
+{'ratio': 'global', 'w_mf': 0.9, 'beta': 0.5, 'map5': 0.38505707196029776}
+{'ratio': 'user_channels', 'w_mf': 0.8, 'beta': 0.1, 'map5': 0.3865674110835401}
+{'ratio': 'user_channels', 'w_mf': 0.8, 'beta': 0.2, 'map5': 0.3892605459057072}
+{'ratio': 'user_channels', 'w_mf': 0.8, 'beta': 0.3, 'map5': 0.390258064516129}
+{'ratio': 'user_channels', 'w_mf': 0.8, 'beta': 0.4, 'map5': 0.3856021505376344}
+{'ratio': 'user_channels', 'w_mf': 0.8, 'beta': 0.5, 'map5': 0.374697270471464}
+BEST {'ratio': 'user_channels', 'w_mf': 0.8, 'beta': 0.3, 'map5': 0.390258064516129}
+.venv/bin/python -u improve3.py  122,56s user 3,72s system 556% cpu 22,689 total

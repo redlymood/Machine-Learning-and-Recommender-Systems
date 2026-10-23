@@ -1,0 +1,39 @@
+{
+ "history_weeks": "11-30",
+ "items_scored": 3867,
+ "pool_size": 6642,
+ "test_users_without_history": 4,
+ "ppr": {
+  "alpha": 0.4,
+  "transform": "raw",
+  "lam": 0.05,
+  "iterations": 10,
+  "max_l1_delta": 2.2516648812143103e-07
+ },
+ "mf": {
+  "factors": 64,
+  "conf_a": 3.0,
+  "reg": 0.02,
+  "steps": 300,
+  "target": "log",
+  "seed": 42,
+  "final_loss": 0.029585007578134537
+ },
+ "hybrid": {
+  "kind": "score",
+  "w_mf": 0.8
+ },
+ "final": {
+  "base": "hybrid",
+  "rerank": "user_channel_ratio",
+  "beta": 0.3
+ },
+ "seconds": {
+  "popularity": 0.06,
+  "ppr": 6.61,
+  "mf": 11.33,
+  "hybrid_fusion": 0.13,
+  "final_rerank": 0.5
+ },
+ "total_seconds": 19.0
+}

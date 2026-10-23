@@ -1,0 +1,11 @@
+[join:qualifying] schedule row: channel 3 (1+1), start 18.05.2020 19:30:00, duration 3600 s, 'ТСН.', id 2400480
+[join:qualifying]   view 2020-05-18 19:10:54 -> 2020-05-18 20:30:35 overlaps 3600 s
+[join:qualifying] by hand: overlap 3600 s / 3600 s = screen 1.0000 (qualifies at >= 0.8: True); pipeline: overlap 3600 s, screen 1.0000
+[join:partial] schedule row: channel 3 (1+1), start 18.05.2020 19:00:00, duration 1800 s, ''Секретные материалы'.', id 6700482
+[join:partial]   view 2020-05-18 19:10:54 -> 2020-05-18 20:30:35 overlaps 1146 s
+[join:partial] by hand: overlap 1146 s / 1800 s = screen 0.6367 (qualifies at >= 0.8: False); pipeline: overlap 1146 s, screen 0.6367
+[ap@5] heavy/popularity: hand 0.7100, code 0.7100
+[ap@5] heavy/mf: hand 0.8000, code 0.8000
+[ap@5] light/final: hand 0.0400, code 0.0400
+[ppr] row sums of P: min 1.000000 max 1.000000; TF iterations 12
+[ppr] float64 reference vs TF batch on 25 users: max |diff| 4.17e-08, identical top-5 order 25/25

@@ -1,0 +1,236 @@
+[
+ {
+  "base": "hyb_mf_lam0",
+  "recent_weeks": 10,
+  "beta": 0.2,
+  "map5": 0.3838064516129032
+ },
+ {
+  "base": "hyb_mf_lam0",
+  "recent_weeks": 10,
+  "beta": 0.3,
+  "map5": 0.3862258064516129
+ },
+ {
+  "base": "hyb_mf_lam0",
+  "recent_weeks": 10,
+  "beta": 0.4,
+  "map5": 0.38675599669148053
+ },
+ {
+  "base": "hyb_mf_lam0",
+  "recent_weeks": 10,
+  "beta": 0.5,
+  "map5": 0.3862191894127378
+ },
+ {
+  "base": "hyb_mf_lam0",
+  "recent_weeks": 10,
+  "beta": 0.7,
+  "map5": 0.3818163771712159
+ },
+ {
+  "base": "hyb_mf_lam0",
+  "recent_weeks": 10,
+  "beta": 1.0,
+  "map5": 0.33105789909015715
+ },
+ {
+  "base": "hyb_mf_lam0",
+  "recent_weeks": 4,
+  "beta": 0.2,
+  "map5": 0.3818105872622002
+ },
+ {
+  "base": "hyb_mf_lam0",
+  "recent_weeks": 4,
+  "beta": 0.3,
+  "map5": 0.3821182795698924
+ },
+ {
+  "base": "hyb_mf_lam0",
+  "recent_weeks": 4,
+  "beta": 0.4,
+  "map5": 0.3757518610421836
+ },
+ {
+  "base": "hyb_mf_lam0",
+  "recent_weeks": 4,
+  "beta": 0.5,
+  "map5": 0.35683209263854426
+ },
+ {
+  "base": "hyb_mf_lam0",
+  "recent_weeks": 4,
+  "beta": 0.7,
+  "map5": 0.2425483870967742
+ },
+ {
+  "base": "hyb_mf_lam0",
+  "recent_weeks": 4,
+  "beta": 1.0,
+  "map5": 0.10434077750206783
+ },
+ {
+  "base": "hyb_mf_lam0",
+  "recent_weeks": 2,
+  "beta": 0.2,
+  "map5": 0.3812357320099256
+ },
+ {
+  "base": "hyb_mf_lam0",
+  "recent_weeks": 2,
+  "beta": 0.3,
+  "map5": 0.38222167080231595
+ },
+ {
+  "base": "hyb_mf_lam0",
+  "recent_weeks": 2,
+  "beta": 0.4,
+  "map5": 0.37945822994210093
+ },
+ {
+  "base": "hyb_mf_lam0",
+  "recent_weeks": 2,
+  "beta": 0.5,
+  "map5": 0.36981224152191894
+ },
+ {
+  "base": "hyb_mf_lam0",
+  "recent_weeks": 2,
+  "beta": 0.7,
+  "map5": 0.30545740281224154
+ },
+ {
+  "base": "hyb_mf_lam0",
+  "recent_weeks": 2,
+  "beta": 1.0,
+  "map5": 0.1363978494623656
+ },
+ {
+  "base": "hyb_mf_lam0.1",
+  "recent_weeks": 10,
+  "beta": 0.2,
+  "map5": 0.3827667493796526
+ },
+ {
+  "base": "hyb_mf_lam0.1",
+  "recent_weeks": 10,
+  "beta": 0.3,
+  "map5": 0.38367741935483873
+ },
+ {
+  "base": "hyb_mf_lam0.1",
+  "recent_weeks": 10,
+  "beta": 0.4,
+  "map5": 0.38303473945409433
+ },
+ {
+  "base": "hyb_mf_lam0.1",
+  "recent_weeks": 10,
+  "beta": 0.5,
+  "map5": 0.38278081058726215
+ },
+ {
+  "base": "hyb_mf_lam0.1",
+  "recent_weeks": 10,
+  "beta": 0.7,
+  "map5": 0.37676840363937136
+ },
+ {
+  "base": "hyb_mf_lam0.1",
+  "recent_weeks": 10,
+  "beta": 1.0,
+  "map5": 0.3189172870140612
+ },
+ {
+  "base": "hyb_mf_lam0.1",
+  "recent_weeks": 4,
+  "beta": 0.2,
+  "map5": 0.3838213399503722
+ },
+ {
+  "base": "hyb_mf_lam0.1",
+  "recent_weeks": 4,
+  "beta": 0.3,
+  "map5": 0.38497766749379647
+ },
+ {
+  "base": "hyb_mf_lam0.1",
+  "recent_weeks": 4,
+  "beta": 0.4,
+  "map5": 0.38298014888337467
+ },
+ {
+  "base": "hyb_mf_lam0.1",
+  "recent_weeks": 4,
+  "beta": 0.5,
+  "map5": 0.37601488833746904
+ },
+ {
+  "base": "hyb_mf_lam0.1",
+  "recent_weeks": 4,
+  "beta": 0.7,
+  "map5": 0.3099371381306865
+ },
+ {
+  "base": "hyb_mf_lam0.1",
+  "recent_weeks": 4,
+  "beta": 1.0,
+  "map5": 0.12865591397849463
+ },
+ {
+  "base": "hyb_mf_lam0.1",
+  "recent_weeks": 2,
+  "beta": 0.2,
+  "map5": 0.3831191066997518
+ },
+ {
+  "base": "hyb_mf_lam0.1",
+  "recent_weeks": 2,
+  "beta": 0.3,
+  "map5": 0.3850843672456576
+ },
+ {
+  "base": "hyb_mf_lam0.1",
+  "recent_weeks": 2,
+  "beta": 0.4,
+  "map5": 0.3844780810587262
+ },
+ {
+  "base": "hyb_mf_lam0.1",
+  "recent_weeks": 2,
+  "beta": 0.5,
+  "map5": 0.3811869313482217
+ },
+ {
+  "base": "hyb_mf_lam0.1",
+  "recent_weeks": 2,
+  "beta": 0.7,
+  "map5": 0.35208519437551694
+ },
+ {
+  "base": "hyb_mf_lam0.1",
+  "recent_weeks": 2,
+  "beta": 1.0,
+  "map5": 0.1895268817204301
+ },
+ {
+  "base": "ppr+schedule",
+  "recent_weeks": 10,
+  "beta": 0.4,
+  "map5": 0.37227543424317616
+ },
+ {
+  "base": "mf_lam0+schedule",
+  "recent_weeks": 10,
+  "beta": 0.4,
+  "map5": 0.3725293631100083
+ },
+ {
+  "base": "popularity+schedule",
+  "recent_weeks": 10,
+  "beta": 0.4,
+  "map5": 0.27927295285359804
+ }
+]

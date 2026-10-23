@@ -1,0 +1,9 @@
+[val] history weeks 11-20: users with >=1 qualifying view 4,737; test users with history 1242/1260; pool size 6,376
+[test] history weeks 11-30: users with >=1 qualifying view 4,841; test users with history 1256/1260; pool size 6,642
+[val2] history weeks 11-24: users with >=1 qualifying view 4,768; test users with history 1245/1260; pool size 5,013
+[val] evaluable users (>=5 distinct qualifying shows in weeks 21-30): 4,030; of them test users: 1150
+[val] MAP@5 popularity (qualifying airings): 0.27927
+[val] MAP@5 popularity (distinct users):     0.25734
+[val] MAP@5 personal frequency + pop fill:   0.35401
+[val, test-user subset n=1150] popularity 0.30509, personal 0.39059
+done in 0.7s
